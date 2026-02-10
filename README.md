@@ -1,4 +1,4 @@
-# ATS Optimizer — Documentation Hub
+﻿# ATS Optimizer — Documentation Hub
 
 > **A fully-automated job application pipeline built for people who don't have time to job-hunt.**
 
@@ -18,17 +18,16 @@ The system eliminates **every manual step** between "I'm looking for a job" and 
 
 ## How It Works (30-Second Summary)
 
-```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│  Candidate   │────▸│  Job         │────▸│  Resume      │────▸│  Auto        │
-│  Profile     │     │  Discovery   │     │  Tailoring   │     │  Apply       │
-│  (5-10 pages)│     │  Engine      │     │  Engine      │     │  Engine      │
-└──────────────┘     └──────────────┘     └──────────────┘     └──────────────┘
-       │                    │                    │                    │
-       ▼                    ▼                    ▼                    ▼
-  Your complete       Scrapes LinkedIn    Generates a unique   Fills forms,
-  professional        Indeed, Glassdoor   ATS-optimized PDF    uploads resume,
-  story in JSON       every few hours     for EACH job         submits — hands-free
+```mermaid
+flowchart LR
+    A[Candidate Profile<br/>(5-10 pages)] --> B[Job Discovery Engine]
+    B --> C[Resume Tailoring Engine]
+    C --> D[Auto Apply Engine]
+    
+    A --> E[Your complete<br/>professional story<br/>in JSON]
+    B --> F[Scrapes LinkedIn,<br/>Indeed, Glassdoor<br/>every few hours]
+    C --> G[Generates a unique<br/>ATS-optimized PDF<br/>for EACH job]
+    D --> H[Fills forms,<br/>uploads resume,<br/>submits — hands-free]
 ```
 
 ---
@@ -37,15 +36,15 @@ The system eliminates **every manual step** between "I'm looking for a job" and 
 
 | # | Document | What It Covers |
 |---|---|---|
-| 01 | [Requirements Analysis](01-requirements-analysis.md) | User personas, functional/non-functional requirements, constraints |
-| 02 | [Candidate Profile System](02-candidate-profile-system.md) | The "master document" — schema, data capture, storage |
-| 03 | [ATS Analysis Engine](03-ats-analysis-engine.md) | Scoring algorithm, keyword extraction, improvement suggestions |
-| 04 | [Job Discovery Engine](04-job-discovery-engine.md) | Multi-portal scraping, deduplication, smart filtering |
-| 05 | [Resume Generation Engine](05-resume-generation-engine.md) | LLM-powered tailoring, template system, PDF rendering |
-| 06 | [Application Automation Engine](06-application-automation-engine.md) | Portal-specific drivers, form filling, CAPTCHA handling |
-| 07 | [High-Level Architecture](07-high-level-architecture.md) | System diagram, service boundaries, data flow |
-| 08 | [Low-Level Design](08-low-level-design.md) | Classes, DB schema, API contracts, config files |
-| 09 | [Implementation Roadmap](09-implementation-roadmap.md) | Phased plan, milestones, tech stack decisions |
+| 01 | [Requirements Analysis](docs/01-requirements-analysis.md) | User personas, functional/non-functional requirements, constraints |
+| 02 | [Candidate Profile System](docs/02-candidate-profile-system.md) | The "master document" — schema, data capture, storage |
+| 03 | [ATS Analysis Engine](docs/03-ats-analysis-engine.md) | Scoring algorithm, keyword extraction, improvement suggestions |
+| 04 | [Job Discovery Engine](docs/04-job-discovery-engine.md) | Multi-portal scraping, deduplication, smart filtering |
+| 05 | [Resume Generation Engine](docs/05-resume-generation-engine.md) | LLM-powered tailoring, template system, PDF rendering |
+| 06 | [Application Automation Engine](docs/06-application-automation-engine.md) | Portal-specific drivers, form filling, CAPTCHA handling |
+| 07 | [High-Level Architecture](docs/07-high-level-architecture.md) | System diagram, service boundaries, data flow |
+| 08 | [Low-Level Design](docs/08-low-level-design.md) | Classes, DB schema, API contracts, config files |
+| 09 | [Implementation Roadmap](docs/09-implementation-roadmap.md) | Phased plan, milestones, tech stack decisions |
 
 ---
 
@@ -563,9 +562,9 @@ Continuously find relevant jobs across multiple portals, deduplicate, score, and
 
 | Portal | Method | Apply Support | Notes |
 |---|---|---|---|
-| **LinkedIn** | Selenium scraping | Easy Apply | Requires login. Most jobs. |
-| **Indeed** | Selenium scraping | Indeed Apply | Large volume, many duplicates |
-| **Glassdoor** | Selenium scraping | Easy Apply / Redirect | Often redirects to company ATS |
+| **LinkedIn** | Playwright scraping | Easy Apply | Requires login. Most jobs. |
+| **Indeed** | Playwright scraping | Indeed Apply | Large volume, many duplicates |
+| **Glassdoor** | Playwright scraping | Easy Apply / Redirect | Often redirects to company ATS |
 | **Company Career Pages** | Per-company drivers (Workday, Greenhouse, Lever) | Native forms | Phase 2+ |
 
 ---

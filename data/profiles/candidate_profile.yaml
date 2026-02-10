@@ -1,0 +1,149 @@
+# Sample / Empty Candidate Profile
+# Fill this file with your professional information.
+# The system uses this as the "source of truth" to generate tailored resumes.
+
+personal_info:
+  full_name: "Jane Doe"
+  email: "jane.doe@email.com"
+  phone: "+1-555-123-4567"
+  location: "San Francisco, CA"
+  linkedin: "https://linkedin.com/in/janedoe"
+  github: "https://github.com/janedoe"
+  portfolio: null
+
+summaries:
+  - target_role: "Backend Engineer"
+    text: >
+      Experienced backend engineer with 5+ years building scalable Python
+      services. Proficient in FastAPI, Django, PostgreSQL, and cloud
+      infrastructure. Passionate about clean architecture and reliable systems.
+  - target_role: "Full Stack Developer"
+    text: >
+      Full stack developer with 5+ years of experience building web
+      applications from database to frontend. Skilled in Python, React,
+      PostgreSQL, and AWS.
+
+skills:
+  - category: "Languages"
+    items:
+      - name: "Python"
+        proficiency: "Expert"
+        years: 6
+      - name: "JavaScript"
+        proficiency: "Advanced"
+        years: 4
+      - name: "TypeScript"
+        proficiency: "Intermediate"
+        years: 2
+      - name: "SQL"
+        proficiency: "Advanced"
+        years: 5
+
+  - category: "Frameworks"
+    items:
+      - name: "FastAPI"
+        proficiency: "Expert"
+        years: 3
+      - name: "Django"
+        proficiency: "Advanced"
+        years: 4
+      - name: "React"
+        proficiency: "Intermediate"
+        years: 2
+
+  - category: "Tools & Infrastructure"
+    items:
+      - name: "PostgreSQL"
+        proficiency: "Advanced"
+        years: 5
+      - name: "Redis"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Docker"
+        proficiency: "Advanced"
+        years: 4
+      - name: "AWS"
+        proficiency: "Intermediate"
+        years: 3
+      - name: "Git"
+        proficiency: "Expert"
+        years: 6
+
+experience:
+  - company: "TechCorp Inc."
+    title: "Senior Backend Engineer"
+    location: "San Francisco, CA"
+    start_date: "2022-03"
+    end_date: null  # null means current
+    bullets:
+      - text: "Designed and built a high-throughput event processing pipeline handling 50K events/second using Python, Kafka, and PostgreSQL"
+        tags: ["Python", "Kafka", "PostgreSQL", "event-driven", "high-throughput"]
+      - text: "Led migration from monolithic Django app to FastAPI microservices, reducing P99 latency by 40%"
+        tags: ["Django", "FastAPI", "microservices", "performance", "migration"]
+      - text: "Implemented Redis-based caching layer that reduced database load by 60% and improved API response times by 3x"
+        tags: ["Redis", "caching", "performance", "API"]
+      - text: "Mentored 3 junior engineers through code reviews, pair programming, and architectural guidance"
+        tags: ["mentoring", "leadership", "code-review"]
+
+  - company: "StartupXYZ"
+    title: "Software Engineer"
+    location: "Remote"
+    start_date: "2019-06"
+    end_date: "2022-02"
+    bullets:
+      - text: "Built RESTful APIs serving 10K daily active users using Django REST Framework and PostgreSQL"
+        tags: ["Django", "REST API", "PostgreSQL", "DRF"]
+      - text: "Developed automated deployment pipeline using Docker, GitHub Actions, and AWS ECS"
+        tags: ["Docker", "CI/CD", "AWS", "GitHub Actions", "ECS"]
+      - text: "Created real-time notification system using WebSockets and Redis Pub/Sub"
+        tags: ["WebSockets", "Redis", "real-time", "notifications"]
+      - text: "Wrote comprehensive test suites achieving 90%+ code coverage using pytest"
+        tags: ["pytest", "testing", "code-coverage", "quality"]
+
+education:
+  - institution: "University of California, Berkeley"
+    degree: "B.S. Computer Science"
+    graduation_date: "2019-05"
+    gpa: "3.7"
+    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Databases", "Machine Learning"]
+
+certifications:
+  - name: "AWS Solutions Architect Associate"
+    issuer: "Amazon Web Services"
+    date: "2023-01"
+  - name: "Python Professional Certificate"
+    issuer: "Python Institute"
+    date: "2021-06"
+
+projects:
+  - name: "Open Source CLI Tool"
+    description: "Built a command-line tool for automating database migrations across multiple environments"
+    tech_stack: ["Python", "Click", "PostgreSQL", "Docker"]
+    url: "https://github.com/janedoe/db-migrator"
+    highlights:
+      - "500+ GitHub stars"
+      - "Used by 3 companies in production"
+
+  - name: "Real-time Dashboard"
+    description: "Full-stack monitoring dashboard with live metrics and alerting"
+    tech_stack: ["React", "TypeScript", "FastAPI", "WebSockets", "PostgreSQL"]
+    url: null
+    highlights:
+      - "Sub-second data refresh using WebSocket streams"
+      - "Custom alerting rules engine with email/Slack notifications"
+
+qa_bank:
+  - question_pattern: "years of experience"
+    answer: "5"
+  - question_pattern: "authorized to work"
+    answer: "Yes"
+  - question_pattern: "require.*sponsorship|visa"
+    answer: "No"
+  - question_pattern: "willing to relocate"
+    answer: "Yes"
+  - question_pattern: "salary|compensation|expected.*pay"
+    answer: "Open to discussion based on total compensation"
+  - question_pattern: "start date|available to start"
+    answer: "2 weeks notice"
+  - question_pattern: "gender|race|ethnicity|veteran|disability"
+    answer: "Prefer not to say"

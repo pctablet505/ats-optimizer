@@ -1,0 +1,28 @@
+app:
+  name: "ATS Optimizer"
+  version: "1.0.0"
+
+database:
+  url: "sqlite:///data/ats_optimizer.db"
+
+llm:
+  provider: "stub"             # stub | ollama | openai | gemini
+  model: "llama3"
+  api_key: null
+  base_url: "http://localhost:11434"
+
+browser:
+  engine: "playwright"
+  headless: true
+  user_data_dir: "data/browser_profiles"
+
+notifications:
+  enabled: false
+  method: "desktop"
+  telegram_bot_token: null
+  telegram_chat_id: null
+
+scoring:
+  auto_apply_threshold: 70     # Minimum job-profile match score to auto-apply
+  min_ats_score: 70            # Minimum ATS score for generated resume
+  max_retry_generations: 2     # Max resume re-generation attempts
