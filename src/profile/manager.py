@@ -72,6 +72,10 @@ class CandidateProfile:
         return self.data.get("projects", [])
 
     @property
+    def honors(self) -> list[str]:
+        return self.data.get("honors", [])
+
+    @property
     def qa_bank(self) -> list[dict]:
         return self.data.get("qa_bank", [])
 

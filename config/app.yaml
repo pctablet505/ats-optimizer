@@ -6,9 +6,9 @@ database:
   url: "sqlite:///data/ats_optimizer.db"
 
 llm:
-  provider: "stub"             # stub | ollama | openai | gemini
-  model: "llama3"
-  api_key: null
+  provider: "grok"             # stub | grok | ollama | openai
+  model: "grok-3-mini-fast-beta"  # cheapest xAI model; use GROK_MODEL env var to override
+  api_key: null                # not used for grok — key comes from GROK_API_KEY
   base_url: "http://localhost:11434"
 
 browser:

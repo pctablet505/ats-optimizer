@@ -2,6 +2,7 @@
 
 import pytest
 import asyncio
+from unittest.mock import patch
 
 from src.automation.question_answerer import QuestionAnswerer
 from src.automation.human_simulator import HumanSimulator
@@ -11,6 +12,21 @@ from src.automation.drivers.base import DiscoveredJob, SearchConfig
 from src.automation.drivers.linkedin import LinkedInDriver
 from src.automation.drivers.indeed import IndeedDriver
 from src.profile.manager import CandidateProfile
+
+
+# ── Fixture: force stub data in orchestrator tests ───────────────────────────
+
+@pytest.fixture(autouse=False)
+def no_browser(monkeypatch):
+    """Patch _playwright_available everywhere so tests don't launch browsers.
+
+    Must patch in each driver module (not just base) because they each import
+    _playwright_available into their own namespace at module load time.
+    """
+    stub = lambda: False  # noqa: E731
+    monkeypatch.setattr("src.automation.drivers.base._playwright_available", stub)
+    monkeypatch.setattr("src.automation.drivers.indeed._playwright_available", stub)
+    monkeypatch.setattr("src.automation.drivers.linkedin._playwright_available", stub)
 
 
 # ── Sample Data ──────────────────────────────────────────────
@@ -113,7 +129,8 @@ class TestQuestionAnswerer:
         })
         qa = QuestionAnswerer(empty_profile)
         result = qa.answer("years of experience")
-        assert result["source"] in ("llm", "manual")
+        # "years of experience" is now handled by the derived-answer layer
+        assert result["source"] in ("llm", "manual", "derived")
 
 
 # ── Human Simulator Tests ───────────────────────────────────
@@ -122,17 +139,16 @@ class TestHumanSimulator:
     def test_init_defaults(self):
         sim = HumanSimulator()
         assert sim.chars_per_second > 0
-        assert sim.min_pause > 0
-        assert sim.max_pause > sim.min_pause
 
     def test_custom_speed(self):
         sim = HumanSimulator(typing_speed_wpm=120)
         assert sim.chars_per_second > HumanSimulator().chars_per_second
 
     def test_get_random_delay(self):
-        sim = HumanSimulator(min_pause_ms=100, max_pause_ms=500)
+        sim = HumanSimulator()
         delay = sim.get_random_delay()
-        assert 0.1 <= delay <= 0.5
+        # Lognormal distribution — delay should be positive
+        assert delay > 0
 
     def test_random_delay_varies(self):
         sim = HumanSimulator()
@@ -187,7 +203,7 @@ class TestCaptchaHandler:
 # ── Orchestrator Tests ───────────────────────────────────────
 
 class TestOrchestrator:
-    def test_pipeline_discovery_only(self, profile):
+    def test_pipeline_discovery_only(self, profile, no_browser):
         """Test pipeline with discovery but no auto-apply."""
         drivers = [IndeedDriver()]
         orch = Orchestrator(
@@ -205,7 +221,7 @@ class TestOrchestrator:
         assert result.resumes_generated > 0
         assert result.applications_submitted == 0  # auto_apply is False
 
-    def test_pipeline_with_auto_apply(self, profile):
+    def test_pipeline_with_auto_apply(self, profile, no_browser):
         """Test full pipeline with auto-apply enabled."""
         drivers = [IndeedDriver()]
         orch = Orchestrator(
@@ -220,7 +236,7 @@ class TestOrchestrator:
         assert result.jobs_discovered > 0
         assert result.applications_submitted > 0  # Stubs succeed
 
-    def test_pipeline_dedup(self, profile):
+    def test_pipeline_dedup(self, profile, no_browser):
         """Existing URLs should be filtered out."""
         drivers = [IndeedDriver()]
         orch = Orchestrator(
@@ -234,7 +250,7 @@ class TestOrchestrator:
 
         assert result.jobs_duplicates >= 1
 
-    def test_pipeline_min_score_filter(self, profile):
+    def test_pipeline_min_score_filter(self, profile, no_browser):
         """High min_score should filter out low-match jobs."""
         drivers = [IndeedDriver()]
         orch = Orchestrator(
@@ -248,9 +264,9 @@ class TestOrchestrator:
         # Most/all jobs should be filtered by score
         assert result.resumes_generated <= result.jobs_scored
 
-    def test_pipeline_multiple_drivers(self, profile):
+    def test_pipeline_multiple_drivers(self, profile, no_browser):
         """Test with multiple drivers."""
-        drivers = [LinkedInDriver(email="a@b.com", password="x"), IndeedDriver()]
+        drivers = [LinkedInDriver(), IndeedDriver()]
         orch = Orchestrator(
             drivers=drivers,
             profile=profile,
@@ -260,9 +276,9 @@ class TestOrchestrator:
         result = asyncio.get_event_loop().run_until_complete(orch.run(config))
 
         # Should discover from both drivers
-        assert result.jobs_discovered >= 4  # 2 from each
+        assert result.jobs_discovered >= 4  # 2 from each (LinkedIn + Indeed stubs)
 
-    def test_pipeline_result_has_no_errors(self, profile):
+    def test_pipeline_result_has_no_errors(self, profile, no_browser):
         """Normal run should complete without errors."""
         drivers = [IndeedDriver()]
         orch = Orchestrator(drivers=drivers, profile=profile, min_score=0.0)

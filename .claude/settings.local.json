@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python -c \"import playwright; print\\(''playwright available''\\)\")",
+      "Bash(python -c \"import playwright; print\\(''playwright installed:'', playwright.__version__\\)\")",
+      "Bash(python -m playwright install chromium)",
+      "Bash(.venv/Scripts/python -c \"from playwright.async_api import async_playwright; print\\(''OK''\\)\")",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"machine learning engineer\" \"LLM\" \"keras\" --portals indeed --min-score 0 --max-results 10)",
+      "Bash(.venv/Scripts/python -m playwright --version)",
+      "Bash(python -m playwright --version)",
+      "Bash(.venv/Scripts/python -:*)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"computer vision engineer\" --portals indeed --min-score 0 --max-results 5)",
+      "Bash(rm -rf data/browser_profiles/indeed)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"edge ai mobile ml tflite\" --portals indeed --min-score 0 --max-results 5)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"deep learning engineer\" --portals indeed --min-score 0 --max-results 5)",
+      "Bash(xargs grep:*)",
+      "Bash(rm -rf data/browser_profiles/indeed data/output/resumes)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"machine learning engineer\" --portals indeed --min-score 0 --max-results 3)",
+      "Bash(.venv/Scripts/python -c \":*)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"computer vision engineer\" --portals indeed --min-score 0 --max-results 3)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"generative ai engineer\" --portals indeed --min-score 0 --max-results 3)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"deep learning engineer\" --portals indeed --min-score 0 --max-results 3)",
+      "Bash(.venv/Scripts/python -m src.cli search --keywords \"MLOps machine learning\" --portals indeed --min-score 0 --max-results 3)",
+      "Bash(python -c \"from src.generator.resume_builder import ResumeBuilder, _fmt_profile; import yaml; p = yaml.safe_load\\(open\\(''data/profiles/candidate_profile.yaml''\\)\\); print\\(_fmt_profile\\(p\\)[:500]\\)\")",
+      "Bash(python -c \":*)",
+      "Bash(python -c \"from src.llm.provider import AnthropicProvider, GrokProvider; print\\(''AnthropicProvider:'', AnthropicProvider.DEFAULT_MODEL\\); print\\(''Grok ceiling:'', GrokProvider.MAX_TOKENS_CEILING\\)\")"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+# LinkedIn CSS selectors — update these if LinkedIn changes their DOM.
+# All selectors are used by src/automation/drivers/linkedin.py
+
+login:
+  email_input: "#username"
+  password_input: "#password"
+  submit_button: "button[type='submit']"
+  logged_in_indicator: ".global-nav__me"
+
+search:
+  # Job search results page - Updated for current LinkedIn DOM
+  job_cards: "[data-job-id]"  # New: use data-job-id instead of li element
+  job_card_title: "a.job-card-list__title--link strong, a.job-card-list__title--link"  # Title in link
+  job_card_company: ".artdeco-entity-lockup__subtitle span"  # Company name
+  job_card_location: ".artdeco-entity-lockup__caption span, .job-card-container__metadata-wrapper li:first-child span"  # Location
+  job_card_link: "a.job-card-list__title--link"  # Job URL
+  job_card_id: "[data-job-id]"
+  next_page_button: "button[aria-label='View next page']"
+
+job_detail:
+  title: "h1.top-card-layout__title, h1.jobs-unified-top-card__job-title"
+  company: "a.topcard__org-name-link, .jobs-unified-top-card__company-name a"
+  location: ".topcard__flavor--bullet, .jobs-unified-top-card__workplace-type"
+  description: "#job-details, .jobs-description__content"
+  easy_apply_button: ".jobs-apply-button--top-card button, button.jobs-apply-button"
+
+easy_apply:
+  # Modal dialog
+  modal: ".jobs-easy-apply-modal"
+  modal_title: ".jobs-easy-apply-modal__header h2"
+  # Form fields
+  file_upload: "input[type='file']"
+  text_input: "input[type='text']:not([readonly])"
+  textarea: "textarea:not([readonly])"
+  select: "select"
+  radio_button: "input[type='radio']"
+  checkbox: "input[type='checkbox']"
+  # Buttons
+  next_button: "button[aria-label='Continue to next step']"
+  review_button: "button[aria-label='Review your application']"
+  submit_button: "button[aria-label='Submit application']"
+  close_button: "button[aria-label='Dismiss']"
+  # Progress
+  progress_bar: ".jobs-easy-apply-modal__progress-bar"
+  # Error / confirmation
+  success_banner: ".jobs-easy-apply-content h1"
+
+# Rate limiting settings - IMPORTANT: Increase these to avoid account bans
+rate_limits:
+  search_delay_ms: 8000          # 8 seconds between search pages
+  job_detail_delay_ms: 5000      # 5 seconds before loading each job detail
+  apply_step_delay_ms: 3000      # 3 seconds between Easy Apply steps
+  max_jobs_per_session: 15       # Reduced from 25 to avoid being too aggressive
+  max_applications_per_day: 5    # Reduced from 20 to be conservative

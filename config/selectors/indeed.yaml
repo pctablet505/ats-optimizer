@@ -1,0 +1,40 @@
+# Indeed CSS selectors — update these if Indeed changes their DOM.
+# All selectors are used by src/automation/drivers/indeed.py
+
+search:
+  # Job search results
+  job_cards: ".job_seen_beacon"
+  job_card_title: "h2.jobTitle a"
+  job_card_company: "[data-testid='company-name'], .companyName"
+  job_card_location: "[data-testid='text-location'], .companyLocation"
+  job_card_salary: ".estimated-salary, .salaryOnly"
+  next_page_button: "[data-testid='pagination-page-next'], a[aria-label='Next Page']"
+
+job_detail:
+  title: "[data-testid='jobsearch-JobInfoHeader-title'], h1.jobsearch-JobInfoHeader-title"
+  company: "[data-testid='inlineHeader-companyName'] a, .jobsearch-InlineCompanyRating a"
+  location: "[data-testid='inlineHeader-companyLocation'], .jobsearch-JobInfoHeader-subtitle"
+  description: "#jobDescriptionText, .jobsearch-jobDescriptionText"
+  apply_button: "#indeedApplyButton, [id^='indeedApply'], .ia-IndeedApplyButton-buttonWrapper button"
+
+apply_form:
+  # Indeed Apply iframe / form
+  apply_iframe: "iframe[id^='indeedapply-iframe'], #indeed-apply-iframe"
+  name_input: "input[name='applicant.name'], input[id*='name']"
+  email_input: "input[name='applicant.emailAddress'], input[type='email']"
+  phone_input: "input[name='applicant.phoneNumber'], input[type='tel']"
+  resume_upload: "input[type='file'][name*='resume'], input[type='file']"
+  cover_letter: "textarea[name*='coverLetter'], textarea[id*='cover']"
+  continue_button: "button[type='button'][id*='continue'], button[type='submit']"
+  submit_button: "button[type='submit'], button[id*='submit']"
+  questions_section: ".ia-Questions, .ia-JobFormQuestion"
+  question_label: "label.ia-Questions-item--label, label"
+  question_input: "input:not([type='hidden']):not([type='submit']), textarea, select"
+
+# Rate limiting settings
+rate_limits:
+  search_delay_ms: 3000
+  job_detail_delay_ms: 2000
+  apply_delay_ms: 1500
+  max_jobs_per_session: 30
+  max_applications_per_day: 15

@@ -1,149 +1,333 @@
-# Sample / Empty Candidate Profile
-# Fill this file with your professional information.
-# The system uses this as the "source of truth" to generate tailored resumes.
+# Rahul Kumar — Candidate Profile
+# Auto-populated from base_resume.tex + GitHub portfolio
 
 personal_info:
-  full_name: "Jane Doe"
-  email: "jane.doe@email.com"
-  phone: "+1-555-123-4567"
-  location: "San Francisco, CA"
-  linkedin: "https://linkedin.com/in/janedoe"
-  github: "https://github.com/janedoe"
-  portfolio: null
+  full_name: "Rahul Kumar"
+  email: "work.rahul126@gmail.com"
+  phone: "+91 8709253658"
+  location: "Bengaluru, India"
+  linkedin: "https://www.linkedin.com/in/rahul126/"
+  github: "https://github.com/pctablet505"
+  portfolio: "https://github.com/pctablet505/portfolio/"
 
 summaries:
-  - target_role: "Backend Engineer"
+  - target_role: "Machine Learning Engineer"
     text: >
-      Experienced backend engineer with 5+ years building scalable Python
-      services. Proficient in FastAPI, Django, PostgreSQL, and cloud
-      infrastructure. Passionate about clean architecture and reliable systems.
-  - target_role: "Full Stack Developer"
+      Machine Learning Engineer with 3.5+ years of experience architecting Generative AI
+      pipelines, Computer Vision systems, and Scalable ML Infrastructure. Currently at
+      Google (Core ML / Keras), building the bridge between research models and production
+      edge deployment via LiteRT. Expert in optimizing inference latency, developing
+      proprietary synthetic data algorithms, and deploying large-scale backend services.
+      Strong background in LLM Infrastructure and End-to-End System Design.
+
+  - target_role: "GenAI / LLM Engineer"
     text: >
-      Full stack developer with 5+ years of experience building web
-      applications from database to frontend. Skilled in Python, React,
-      PostgreSQL, and AWS.
+      Generative AI engineer with hands-on production experience at Google implementing
+      Llama 3.1 and Multimodal Gemma 3 in Keras. Deep expertise in quantization
+      (QAT/PTQ, 4-bit/8-bit), LoRA/PEFT fine-tuning, Flash Attention optimization, and
+      JAX/PyTorch/TensorFlow multi-backend serving. Proven track record taking LLMs from
+      research to edge deployment at scale.
+
+  - target_role: "Computer Vision Engineer"
+    text: >
+      Computer Vision specialist with 3+ years building production CV systems at Samsung
+      R&D and Google. Developed synthetic dataset generation pipelines producing 10M+
+      samples, real-time multi-face recognition for 10k+ users, and object
+      detection/segmentation models deployed on Android devices. Expert in OpenCV,
+      diffusion-based inpainting, and on-device model optimization.
+
+  - target_role: "Edge AI / On-Device ML Engineer"
+    text: >
+      On-device ML engineer with deep expertise in deploying large models to mobile and
+      edge hardware. At Google, architected the LiteRT (TFLite) export pipeline for
+      KerasHub models including Gemma and Llama. At Qualcomm, optimized GenAI models for
+      NPU/DSP constraints achieving 75% memory bandwidth reduction via QAT. Proficient in
+      Android NDK, JNI, OpenVINO, and Hexagon DSP optimization.
 
 skills:
-  - category: "Languages"
+  - category: "Core ML & Generative AI"
+    items:
+      - name: "Keras"
+        proficiency: "Expert"
+        years: 3
+      - name: "TensorFlow"
+        proficiency: "Expert"
+        years: 4
+      - name: "PyTorch"
+        proficiency: "Expert"
+        years: 3
+      - name: "JAX"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Transformers (Llama/Gemma)"
+        proficiency: "Expert"
+        years: 2
+      - name: "Diffusion Models"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Quantization (QAT/PTQ)"
+        proficiency: "Expert"
+        years: 3
+      - name: "Flash Attention"
+        proficiency: "Advanced"
+        years: 1
+      - name: "LoRA/PEFT"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Scikit-Learn"
+        proficiency: "Expert"
+        years: 4
+      - name: "Reinforcement Learning"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Computer Vision"
+    items:
+      - name: "OpenCV"
+        proficiency: "Expert"
+        years: 4
+      - name: "Object Detection"
+        proficiency: "Expert"
+        years: 4
+      - name: "Image Segmentation"
+        proficiency: "Expert"
+        years: 3
+      - name: "Face Recognition"
+        proficiency: "Expert"
+        years: 3
+      - name: "Synthetic Data Generation"
+        proficiency: "Expert"
+        years: 3
+      - name: "Image Restoration"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Image Inpainting"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Object Tracking"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Data Science & Analytics"
+    items:
+      - name: "NumPy"
+        proficiency: "Expert"
+        years: 5
+      - name: "Pandas"
+        proficiency: "Expert"
+        years: 5
+      - name: "Statistical Modeling"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Feature Engineering"
+        proficiency: "Expert"
+        years: 4
+      - name: "Time Series Analysis"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Cloud & Infrastructure"
     items:
       - name: "Python"
         proficiency: "Expert"
         years: 6
-      - name: "JavaScript"
-        proficiency: "Advanced"
-        years: 4
-      - name: "TypeScript"
-        proficiency: "Intermediate"
-        years: 2
-      - name: "SQL"
-        proficiency: "Advanced"
-        years: 5
-
-  - category: "Frameworks"
-    items:
       - name: "FastAPI"
-        proficiency: "Expert"
-        years: 3
-      - name: "Django"
         proficiency: "Advanced"
-        years: 4
-      - name: "React"
-        proficiency: "Intermediate"
         years: 2
-
-  - category: "Tools & Infrastructure"
-    items:
-      - name: "PostgreSQL"
-        proficiency: "Advanced"
-        years: 5
-      - name: "Redis"
+      - name: "Flask"
         proficiency: "Advanced"
         years: 3
       - name: "Docker"
         proficiency: "Advanced"
-        years: 4
-      - name: "AWS"
-        proficiency: "Intermediate"
         years: 3
-      - name: "Git"
+      - name: "GCP"
+        proficiency: "Intermediate"
+        years: 1
+      - name: "REST APIs"
         proficiency: "Expert"
-        years: 6
+        years: 4
+      - name: "CI/CD"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "On-Device & Mobile"
+    items:
+      - name: "LiteRT (TFLite)"
+        proficiency: "Expert"
+        years: 2
+      - name: "OpenVINO"
+        proficiency: "Advanced"
+        years: 1
+      - name: "Android NDK"
+        proficiency: "Advanced"
+        years: 3
+      - name: "JNI"
+        proficiency: "Advanced"
+        years: 3
+      - name: "DSP Optimization (Hexagon)"
+        proficiency: "Intermediate"
+        years: 1
+      - name: "Android Development"
+        proficiency: "Advanced"
+        years: 3
+
+  - category: "Languages"
+    items:
+      - name: "C++"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Java"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Kotlin"
+        proficiency: "Intermediate"
+        years: 2
+      - name: "SQL"
+        proficiency: "Advanced"
+        years: 4
+      - name: "Bash"
+        proficiency: "Advanced"
+        years: 4
+      - name: "R"
+        proficiency: "Intermediate"
+        years: 2
 
 experience:
-  - company: "TechCorp Inc."
-    title: "Senior Backend Engineer"
-    location: "San Francisco, CA"
-    start_date: "2022-03"
-    end_date: null  # null means current
+  - company: "Google — Core ML (Keras)"
+    title: "Software Engineer 2, Machine Learning"
+    location: "Bengaluru, India"
+    start_date: "2025-02"
+    end_date: null
     bullets:
-      - text: "Designed and built a high-throughput event processing pipeline handling 50K events/second using Python, Kafka, and PostgreSQL"
-        tags: ["Python", "Kafka", "PostgreSQL", "event-driven", "high-throughput"]
-      - text: "Led migration from monolithic Django app to FastAPI microservices, reducing P99 latency by 40%"
-        tags: ["Django", "FastAPI", "microservices", "performance", "migration"]
-      - text: "Implemented Redis-based caching layer that reduced database load by 60% and improved API response times by 3x"
-        tags: ["Redis", "caching", "performance", "API"]
-      - text: "Mentored 3 junior engineers through code reviews, pair programming, and architectural guidance"
-        tags: ["mentoring", "leadership", "code-review"]
+      - text: "Architected the end-to-end LiteRT (TFLite) export pipeline enabling KerasHub GenAI models (Gemma, Llama) to run on mobile/edge devices, bridging research and production deployment"
+        tags: ["LiteRT", "TFLite", "Keras", "Gemma", "Llama", "edge deployment", "GenAI", "mobile"]
+      - text: "Designed centralized inference benchmarking suite evaluating throughput (tokens/sec) and latency; automated regression testing across TPU/GPU clusters to identify optimal batch sizes"
+        tags: ["benchmarking", "inference", "TPU", "GPU", "performance", "automation"]
+      - text: "Spearheaded Keras-native implementation for Llama 3.1 and Multimodal Gemma 3; resolved 4-bit/8-bit quantization instabilities and optimized JAX backend operators for large-scale inference"
+        tags: ["Llama", "Gemma", "quantization", "JAX", "LLM", "multimodal", "inference optimization"]
+      - text: "Led architectural migration of mission-critical Ad-recommendation model (Adbrain) to Keras 3; solved cross-framework interoperability issues (Torch/JAX/TF) and fixed OpenVINO and Flash Attention bottlenecks"
+        tags: ["Keras", "PyTorch", "JAX", "TensorFlow", "OpenVINO", "Flash Attention", "migration", "recommendation system"]
+      - text: "Debugged image processing stack; identified and patched segmentation faults in core libraries (giflib); security patches adopted by open-source community"
+        tags: ["debugging", "C++", "open source", "security", "image processing"]
 
-  - company: "StartupXYZ"
-    title: "Software Engineer"
-    location: "Remote"
-    start_date: "2019-06"
-    end_date: "2022-02"
+  - company: "Qualcomm"
+    title: "Machine Learning Engineer"
+    location: "Hyderabad, India"
+    start_date: "2024-09"
+    end_date: "2025-01"
     bullets:
-      - text: "Built RESTful APIs serving 10K daily active users using Django REST Framework and PostgreSQL"
-        tags: ["Django", "REST API", "PostgreSQL", "DRF"]
-      - text: "Developed automated deployment pipeline using Docker, GitHub Actions, and AWS ECS"
-        tags: ["Docker", "CI/CD", "AWS", "GitHub Actions", "ECS"]
-      - text: "Created real-time notification system using WebSockets and Redis Pub/Sub"
-        tags: ["WebSockets", "Redis", "real-time", "notifications"]
-      - text: "Wrote comprehensive test suites achieving 90%+ code coverage using pytest"
-        tags: ["pytest", "testing", "code-coverage", "quality"]
+      - text: "Redesigned 'Magic Keeper' generative inpainting feature for Snapdragon Summit; deployed GenAI models for object removal and image completion optimized for NPU/DSP latency constraints"
+        tags: ["generative AI", "inpainting", "NPU", "DSP", "Snapdragon", "mobile", "object removal"]
+      - text: "Implemented Quantization Aware Training (QAT) reducing memory bandwidth by 75% for high-fidelity image processing tasks on mobile hardware"
+        tags: ["QAT", "quantization", "mobile", "memory optimization", "image processing", "on-device"]
+      - text: "Collaborated with Android framework teams to build voice-controlled Camera Copilot; integrated ML inference directly into native camera stack for real-time media manipulation"
+        tags: ["Android", "real-time", "camera", "ML inference", "mobile", "voice control"]
+
+  - company: "Samsung R&D Institute (SRI-N)"
+    title: "Research & Development Engineer — Computer Vision & Services"
+    location: "Noida, India"
+    start_date: "2022-01"
+    end_date: "2024-08"
+    bullets:
+      - text: "Built Knox Capture: complete damaged barcode scanning solution generating 10M+ synthetic training samples; boosted accuracy from 70% to 90% using YOLOv11 detection, Mask R-CNN segmentation, and U-Net restoration"
+        tags: ["synthetic data", "object detection", "segmentation", "YOLOv11", "Mask R-CNN", "U-Net", "barcode", "Android"]
+      - text: "Developed multi-face recognition system for real-time camera and offline video; optimized database search from O(n) linear to O(log n) complexity; enabled authentication for 10k+ users"
+        tags: ["face recognition", "real-time", "optimization", "computer vision", "Android", "authentication"]
+      - text: "Architected SRI-N Satyapan proctoring platform: built Backend Server, Web Portal, and Android App integrating face/gaze detection; served 2,000+ concurrent users with anti-cheat capabilities"
+        tags: ["backend", "full stack", "Android", "face detection", "gaze detection", "concurrent users", "system design"]
+      - text: "Developed distraction detection AI using facial expressions, eye movement, yawn detection, and head pose estimation; achieved 87% accuracy for attention monitoring"
+        tags: ["facial expression", "eye tracking", "head pose", "attention monitoring", "computer vision"]
+      - text: "Replaced heavy deep learning drop detection model with feature-engineered ML solution; reduced model size by 99% (millions of params to <20) and power consumption by 95% on-device"
+        tags: ["model compression", "feature engineering", "on-device", "sensor fusion", "optimization", "power efficiency"]
+      - text: "Built car crash detection system using device sensors to automatically send SOS to emergency contacts"
+        tags: ["sensor fusion", "anomaly detection", "mobile", "safety"]
 
 education:
-  - institution: "University of California, Berkeley"
-    degree: "B.S. Computer Science"
-    graduation_date: "2019-05"
-    gpa: "3.7"
-    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Databases", "Machine Learning"]
+  - institution: "Massachusetts Institute of Technology (MIT)"
+    degree: "MicroMasters in Statistics and Data Science"
+    graduation_date: "2023-06"
+    location: "Remote"
+    notes: "Graduate-level credential comprising 5 intensive courses and proctored exams (equivalent to 1 semester of Master's coursework)"
+    coursework: ["Machine Learning", "Statistics", "Data Analysis", "Probability", "Computational Thinking"]
+
+  - institution: "Birsa Institute of Technology, Sindri"
+    degree: "B.Tech in Computer Science and Engineering"
+    graduation_date: "2022-06"
+    location: "Dhanbad, India"
+    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Computer Networks", "Linear Algebra"]
 
 certifications:
-  - name: "AWS Solutions Architect Associate"
-    issuer: "Amazon Web Services"
-    date: "2023-01"
-  - name: "Python Professional Certificate"
-    issuer: "Python Institute"
+  - name: "Machine Learning with Python"
+    issuer: "MIT / edX"
+    date: "2022-01"
+    url: "https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d"
+  - name: "Fundamentals of Statistics"
+    issuer: "MIT / edX"
+    date: "2021-08"
+    url: "https://courses.edx.org/certificates/3c59035943454549990f2d2de7f49e9f"
+  - name: "CS50 AI with Python"
+    issuer: "Harvard / edX"
     date: "2021-06"
+    url: "https://cs50.harvard.edu/certificates/2b1773c1-473d-4a7b-89ae-460d23154126"
+  - name: "Advanced Algorithms"
+    issuer: "HackerRank"
+    date: "2021-03"
+    url: "https://www.hackerrank.com/certificates/fc7b9af8aac8"
 
 projects:
-  - name: "Open Source CLI Tool"
-    description: "Built a command-line tool for automating database migrations across multiple environments"
-    tech_stack: ["Python", "Click", "PostgreSQL", "Docker"]
-    url: "https://github.com/janedoe/db-migrator"
+  - name: "Keras & KerasHub — Open Source Contributor"
+    description: "Active contributor to Google's Keras and KerasHub repositories; implemented LiteRT export pipeline and backend compatibility for GenAI models (Gemma, Llama)"
+    tech_stack: ["Keras", "TensorFlow", "LiteRT", "TFLite", "Python", "JAX", "GenAI"]
+    url: "https://github.com/keras-team/keras"
     highlights:
-      - "500+ GitHub stars"
-      - "Used by 3 companies in production"
+      - "Implemented end-to-end LiteRT export pipeline for mobile/edge GenAI deployment"
+      - "Backend compatibility work for Llama 3.1 and Multimodal Gemma 3"
 
-  - name: "Real-time Dashboard"
-    description: "Full-stack monitoring dashboard with live metrics and alerting"
-    tech_stack: ["React", "TypeScript", "FastAPI", "WebSockets", "PostgreSQL"]
+  - name: "Algorithmic Trading System (RL Alpha Labs)"
+    description: "High-frequency trading bot using Reinforcement Learning and Zerodha APIs for the Indian stock market; real-time data ingestion and automated order execution"
+    tech_stack: ["Python", "Reinforcement Learning", "REST APIs", "Time Series", "NumPy", "Pandas"]
     url: null
     highlights:
-      - "Sub-second data refresh using WebSocket streams"
-      - "Custom alerting rules engine with email/Slack notifications"
+      - "Integrated RL policy with live market data for automated portfolio management"
+      - "Real-time order execution via Zerodha broker APIs"
+
+honors:
+  - "MD Appreciation Award — Recognized by Samsung Research Managing Director for innovation in Knox Security"
+  - "Top 0.05% Global Rank — Ranked 1026 out of 2.2M+ participants in HackerRank Algorithms"
+  - "Gold Medal, HackFest 2020 — Global Rank 29 with rating 2042"
+  - "GATE Qualified — All India Rank 5648 in Computer Science"
+  - "CodeVita Season 9 & 10 Finalist"
 
 qa_bank:
-  - question_pattern: "years of experience"
-    answer: "5"
-  - question_pattern: "authorized to work"
-    answer: "Yes"
-  - question_pattern: "require.*sponsorship|visa"
-    answer: "No"
-  - question_pattern: "willing to relocate"
-    answer: "Yes"
-  - question_pattern: "salary|compensation|expected.*pay"
-    answer: "Open to discussion based on total compensation"
-  - question_pattern: "start date|available to start"
-    answer: "2 weeks notice"
+  - question_pattern: "years of experience|how many years"
+    answer: "3.5"
+  - question_pattern: "authorized to work|work authorization|legally authorized|eligible to work"
+    answer: "Yes, authorized to work in India"
+  - question_pattern: "require.*sponsorship|need.*visa|visa.*sponsorship"
+    answer: "Open to discussion"
+  - question_pattern: "willing to relocate|open to relocation"
+    answer: "Yes, open to relocation"
+  - question_pattern: "remote|work from home|hybrid"
+    answer: "Open to remote, hybrid, or on-site"
+  - question_pattern: "salary|compensation|expected.*pay|ctc"
+    answer: "Open to discussion based on the total compensation package"
+  - question_pattern: "start date|when can you start|notice period"
+    answer: "1 month notice period"
+  - question_pattern: "current company|currently working|current employer"
+    answer: "Google — Core ML (Keras Team)"
+  - question_pattern: "why.*leaving|reason for leaving|looking for change"
+    answer: "Seeking new challenges and broader impact in AI/ML product development"
   - question_pattern: "gender|race|ethnicity|veteran|disability"
     answer: "Prefer not to say"
+  - question_pattern: "linkedin|linkedin profile"
+    answer: "https://www.linkedin.com/in/rahul126/"
+  - question_pattern: "github|portfolio"
+    answer: "https://github.com/pctablet505"
+  - question_pattern: "cover letter|why.*interested|why.*company|why.*role"
+    answer: >
+      I am deeply passionate about building AI systems that operate at the intersection of
+      research and real-world deployment. My experience spanning Google, Qualcomm, and Samsung
+      has given me a strong foundation in taking ML models from prototype to production at scale,
+      and I am excited to bring that expertise to your team.
+  - question_pattern: "highest.*education|degree"
+    answer: "B.Tech Computer Science + MIT MicroMasters in Statistics and Data Science"

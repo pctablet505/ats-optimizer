@@ -1,0 +1,26 @@
+Senior LLM Infrastructure Engineer — AI Platform Team
+
+We are building the next generation of LLM serving infrastructure and are looking for a Senior LLM Infrastructure Engineer to join our AI Platform team.
+
+Responsibilities:
+- Design and implement scalable LLM inference pipelines supporting 100B+ parameter models
+- Optimize model serving latency and throughput using quantization (INT4/INT8/FP16), Flash Attention, and custom CUDA kernels
+- Build and maintain model export pipelines for deployment across GPU/TPU clusters and edge hardware
+- Implement benchmarking frameworks to measure tokens/sec, TTFT, and memory utilization across hardware configurations
+- Collaborate with research teams to productionize models (Llama, Gemma, Mistral, GPT variants)
+- Work with JAX, PyTorch, and TensorFlow backends in a multi-framework environment
+- Contribute to open-source model hubs and inference runtimes (vLLM, TGI, TFLite/LiteRT)
+
+Requirements:
+- 3+ years of experience in ML engineering with focus on large model inference or training infrastructure
+- Strong proficiency in Python and C++
+- Hands-on experience with model quantization (QAT, PTQ, GPTQ, AWQ)
+- Experience with distributed training/serving frameworks (JAX, DeepSpeed, Megatron)
+- Familiarity with transformer architectures (attention mechanisms, KV cache, rotary embeddings)
+- Experience with GPU/TPU optimization (profiling, memory management, kernel fusion)
+- Knowledge of Flash Attention, LoRA/QLoRA, and efficient fine-tuning techniques
+
+Nice to have:
+- Experience with LiteRT/TFLite or other edge inference runtimes
+- Open-source contributions to ML frameworks (Keras, PyTorch, JAX)
+- Experience with multi-modal models (vision-language models)

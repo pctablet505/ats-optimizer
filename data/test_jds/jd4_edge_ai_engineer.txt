@@ -1,0 +1,28 @@
+Edge AI / On-Device ML Engineer — Mobile Platform
+
+We are building the AI capabilities of our next flagship mobile platform and need an Edge AI Engineer who can bring powerful ML models to resource-constrained devices.
+
+Responsibilities:
+- Design and optimize ML models for deployment on mobile SoCs (NPU, DSP, GPU, CPU)
+- Implement model compression pipelines: quantization (QAT/PTQ), pruning, knowledge distillation
+- Work with TFLite/LiteRT, ONNX Runtime, CoreML, and vendor SDKs (Qualcomm SNPE, Samsung ONE)
+- Profile and benchmark model inference on Android/iOS devices; identify memory and latency bottlenecks
+- Collaborate with Android/iOS platform teams via NDK/JNI bindings and native libraries
+- Build on-device AI features: real-time image processing, object recognition, natural language understanding
+- Work with hardware architects on NPU-aware model design and operator fusion
+
+Requirements:
+- 3+ years of ML engineering experience with focus on mobile/embedded deployment
+- Strong experience with TFLite, LiteRT, ONNX, or CoreML
+- Hands-on experience with quantization: INT8, INT4, mixed-precision inference
+- Proficient in Python and C++; experience with Android NDK/JNI
+- Understanding of DSP/NPU architecture and memory hierarchy
+- Experience with OpenVINO or similar inference optimization toolkits
+- Familiarity with profiling tools (Android Profiler, Instruments, Snapdragon Profiler)
+- Knowledge of efficient neural network architectures (MobileNet, EfficientNet, SqueezeNet)
+
+Nice to have:
+- Experience with Qualcomm SNPE/QNN or Samsung ONE-RT
+- Hexagon DSP programming experience
+- Contributions to TFLite/LiteRT or ONNX Runtime
+- Experience with GenAI models on-device (Gemma, Whisper, LLaMA.cpp)

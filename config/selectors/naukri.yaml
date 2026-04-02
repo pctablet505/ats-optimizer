@@ -1,0 +1,34 @@
+# Naukri.com CSS selectors — update here when Naukri changes their DOM.
+# All selectors are used by src/automation/drivers/naukri.py
+#
+# Naukri uses class names that change frequently. Where possible, selectors
+# target structural / semantic patterns rather than specific class strings.
+# Multiple fallback selectors are tried in naukri.py code when one fails.
+
+search:
+  # Job card container — try in order: newest, legacy variants
+  job_cards: "article.jobTuple"
+  # Fallbacks tried in code: .cust-job-tuple, [class*='job-tuple']
+
+  # Within each card:
+  job_card_title: ".title a, a.title, [class*='title'] a"
+  job_card_company: ".subTitle a, a.subTitle, [class*='company'] a, .comp-name"
+  job_card_location: ".location span, [class*='location'] span, li.location, .loc-name"
+  job_card_salary: ".salary, [class*='salary'], .sal-wrap"
+
+  # Pagination
+  next_page_button: "a.fright.fs14.btn-secondary, a[class*='next']"
+
+job_detail:
+  # Job description container on the individual job page
+  # Note: naukri.py uses JS evaluate() with multiple fallbacks, not a single selector
+  description: "[class*='jd-desc'], .job-desc, #job_description, .dang-inner-html"
+  title: ".jd-header-title, h1.title"
+  company: ".jd-header-comp-name a, [class*='comp-name'] a"
+  location: ".location-li, [class*='location'] li"
+
+rate_limits:
+  search_delay_ms: 9000          # 9 seconds between pages (Naukri is rate-limit sensitive)
+  job_detail_delay_ms: 6000      # 6 seconds before each JD fetch
+  max_jobs_per_session: 20       # Conservative: 20 per run
+  max_applications_per_day: 5    # Very conservative — apply manually when uncertain

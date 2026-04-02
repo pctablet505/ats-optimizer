@@ -1,0 +1,66 @@
+# Q&A Bank — pre-answered application form questions
+# Each entry has:
+#   question_pattern: regex matched against the question text (case-insensitive)
+#   answer: the text to fill in
+#
+# Edit these to match your real answers before running the pipeline.
+
+- question_pattern: "years of experience|how many years"
+  answer: "5"
+
+- question_pattern: "authorized to work|work authorization|legally authorized|eligible to work"
+  answer: "Yes"
+
+- question_pattern: "require.*sponsorship|need.*visa|visa.*sponsorship|sponsorship.*visa"
+  answer: "No"
+
+- question_pattern: "willing to relocate|open to relocation"
+  answer: "Open to discussion"
+
+- question_pattern: "remote|work from home|hybrid|on.?site"
+  answer: "Open to remote or hybrid arrangements"
+
+- question_pattern: "salary|compensation|pay expectation|desired.*salary|expected.*salary"
+  answer: "Open to discussion based on the full compensation package"
+
+- question_pattern: "start date|when can you start|availability"
+  answer: "2 weeks after offer acceptance"
+
+- question_pattern: "gender|sex"
+  answer: "Prefer not to say"
+
+- question_pattern: "race|ethnicity|ethnic"
+  answer: "Prefer not to say"
+
+- question_pattern: "veteran|military service|served in"
+  answer: "No"
+
+- question_pattern: "disability|disabled|accommodation"
+  answer: "No"
+
+- question_pattern: "cover letter|why.*interested|why.*company|why.*role|why.*position"
+  answer: >
+    I am excited about this opportunity because it aligns well with my background
+    in software engineering and my passion for building scalable, reliable systems.
+    I look forward to contributing to your team.
+
+- question_pattern: "how did you hear|referred by|source"
+  answer: "LinkedIn"
+
+- question_pattern: "linkedin|linkedin profile|linkedin url"
+  answer: "https://linkedin.com/in/yourprofile"
+
+- question_pattern: "github|github profile|github url|portfolio"
+  answer: "https://github.com/yourusername"
+
+- question_pattern: "willing to travel|travel requirement"
+  answer: "Up to 10%"
+
+- question_pattern: "highest.*education|degree|education level"
+  answer: "Bachelor's Degree"
+
+- question_pattern: "currently employed|current employer|currently working"
+  answer: "Yes"
+
+- question_pattern: "notice period|notice required|how soon can you leave"
+  answer: "2 weeks"

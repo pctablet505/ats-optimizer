@@ -1,0 +1,28 @@
+GenAI Research Engineer — Foundation Models
+
+Join our Foundation Models team to push the boundaries of generative AI. You will work at the intersection of research and engineering, taking cutting-edge models from paper to production.
+
+Responsibilities:
+- Implement and fine-tune large language models (LLMs) and multimodal models using PyTorch and JAX
+- Apply parameter-efficient fine-tuning methods: LoRA, QLoRA, adapters, prefix tuning
+- Develop and evaluate diffusion-based image and video generation pipelines
+- Build training infrastructure for distributed fine-tuning on GPU/TPU clusters
+- Optimize inference performance: speculative decoding, continuous batching, KV cache management
+- Conduct ablation studies and systematic experiments; publish findings internally and externally
+- Collaborate with product teams to integrate GenAI capabilities into user-facing features
+- Contribute to open-source GenAI ecosystem (Hugging Face, Keras, LangChain)
+
+Requirements:
+- MS or PhD in Machine Learning, Computer Science, or related field (or equivalent experience)
+- 2+ years hands-on experience with LLM training or fine-tuning
+- Deep understanding of transformer architectures: attention, positional encoding, layer norm
+- Experience with JAX, PyTorch, or TensorFlow at scale
+- Knowledge of efficient training techniques: gradient checkpointing, mixed precision, FSDP/DeepSpeed
+- Familiarity with RLHF, DPO, or other alignment methods
+- Strong Python programming; experience with CUDA or XLA a plus
+
+Nice to have:
+- Experience with multimodal models (image+text, audio+text)
+- Contributions to open-source ML projects (Keras, Hugging Face Transformers)
+- Experience with Gemma, Llama, or Mistral model families
+- Background in reinforcement learning applied to sequential decision-making
