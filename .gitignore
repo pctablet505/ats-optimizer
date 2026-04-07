@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Database
+data/ats_optimizer.db
+data/*.db
+
+# Generated resumes (outputs)
+data/output/
+
+# Browser profiles / session data
+data/browser_profiles/
+
+# Credentials / secrets
+.env
+.env.*
+config/credentials.yaml
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+/tests/__pycache__
+/tests/__pycache__

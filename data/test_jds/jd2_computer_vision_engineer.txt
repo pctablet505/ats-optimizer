@@ -1,0 +1,28 @@
+Senior Computer Vision Engineer — Perception & AI
+
+We are hiring a Senior Computer Vision Engineer to build perception systems for our next-generation smart device platform.
+
+Responsibilities:
+- Design and implement computer vision algorithms for object detection, segmentation, tracking, and recognition
+- Develop synthetic data generation pipelines to address real-world data scarcity for edge-case scenarios
+- Build and train models for face recognition, scene understanding, and visual anomaly detection
+- Optimize CV models for deployment on mobile/embedded hardware (Android, ARM, NPU)
+- Implement image restoration and enhancement pipelines (denoising, super-resolution, inpainting)
+- Collaborate with hardware teams on DSP/NPU-aware model design and quantization
+- Build datasets and evaluation frameworks; push accuracy from baseline to production-grade
+
+Requirements:
+- 3+ years experience in computer vision and deep learning
+- Strong knowledge of PyTorch or TensorFlow; experience with OpenCV
+- Hands-on experience with detection frameworks (YOLO, Faster R-CNN, DETR)
+- Experience with segmentation models (Mask R-CNN, SAM, U-Net)
+- Knowledge of face recognition systems, biometric authentication pipelines
+- Experience deploying models on Android (TFLite, ONNX, CoreML)
+- Proficient in Python; C++ a strong plus for performance-critical components
+- Understanding of model compression: pruning, quantization, knowledge distillation
+
+Nice to have:
+- Experience with generative models for synthetic data (GANs, Diffusion Models)
+- Background in image inpainting or restoration (shadow removal, deblurring)
+- Research publication or patent in computer vision
+- Experience with multi-sensor fusion (IMU + camera)

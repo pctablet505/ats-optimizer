@@ -1,0 +1,202 @@
+\documentclass[10pt, letterpaper]{article}
+
+%-------------------------
+% Packages
+%-------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{multicol}
+
+%-------------------------
+% Geometry / Margins
+%-------------------------
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+%-------------------------
+% Custom Colors
+%-------------------------
+\definecolor{midnightblue}{RGB}{25, 25, 112}
+\definecolor{darkgray}{RGB}{70, 70, 70}
+
+%-------------------------
+% Formatting Settings
+%-------------------------
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\color{midnightblue}\bfseries
+}{}{0em}{}[\color{midnightblue}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+%-------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small\color{darkgray} #2} \\
+      \textit{\small#3} & \textit{\small\color{darkgray} #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=midnightblue,
+    filecolor=magenta,
+    urlcolor=midnightblue,
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{\color{midnightblue} (( personal_info.full_name | le ))}} \\ \vspace{4pt}
+    (% if personal_info.title %)
+    {\Large \textmd{(( personal_info.title | le ))}} \\ \vspace{4pt}
+    (% endif %)
+    \small
+    (% if personal_info.phone %)
+    (( personal_info.phone | le )) $|$\
+    (% endif %)
+    \href{mailto:(( personal_info.email | url_escape ))}{(( personal_info.email | le ))} $|$\
+    (% if personal_info.linkedin %)
+    \href{(( personal_info.linkedin | url_escape ))}{linkedin.com/in/(( personal_info.linkedin.rstrip('/').split('/')[-1] | le ))} $|$\
+    (% endif %)
+    (% if personal_info.github %)
+    \href{(( personal_info.github | url_escape ))}{github.com/(( personal_info.github.rstrip('/').split('/')[-1] | le ))}
+    (% endif %)
+    (% if personal_info.portfolio %)
+    $|$\ \href{(( personal_info.portfolio | url_escape ))}{Portfolio}
+    (% endif %)
+\end{center}
+
+%-----------SUMMARY-----------
+(% if summary %)
+\section{Professional Summary}
+\vspace{2pt}
+\color{darkgray}
+\small{(( summary | le ))}
+(% endif %)
+
+%-----------EXPERIENCE-----------
+(% if experience %)
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+(% for exp in experience %)
+    \resumeSubheading
+      {(( exp.company | le ))}{(( exp.end_date | le ))}
+      {(( exp.title | le ))}{(( exp.location | le ))}
+      \resumeItemListStart
+(% for bullet in exp.bullets %)
+        \resumeItem{(( bullet.text | le ))}
+(% endfor %)
+      \resumeItemListEnd
+
+(% endfor %)
+  \resumeSubHeadingListEnd
+(% endif %)
+
+%-----------EDUCATION-----------
+(% if education %)
+\section{Education}
+  \resumeSubHeadingListStart
+(% for edu in education %)
+    \resumeSubheading
+      {(( edu.institution | le ))}{(( edu.location | le ))}
+      {\href{(( (edu.url if edu.url else '') | url_escape ))}{(( edu.degree | le ))}}{(( edu.graduation_date | le ))}
+(% if edu.notes %)
+      \vspace{-4pt}
+      \small{\item{\textit{(( edu.notes | le ))}}}
+(% endif %)
+(% endfor %)
+  \resumeSubHeadingListEnd
+(% endif %)
+
+%-----------HONORS & AWARDS-----------
+(% if honors %)
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+(% for honor in honors %)
+    \resumeItem{(( honor | le ))}
+(% endfor %)
+  \resumeSubHeadingListEnd
+(% endif %)
+
+%-----------CERTIFICATIONS-----------
+(% if certifications %)
+\section{Certifications}
+  \small{
+(% for cert in certifications %)
+    \textbf{(( cert.issuer | le )):} \href{(( (cert.url if cert.url else '') | url_escape ))}{(( cert.name | le ))}(% if not loop.last %)(( ' $|$' ))(% endif %)
+(% endfor %)
+  }
+(% endif %)
+
+%-----------TECHNICAL SKILLS-----------
+(% if skills %)
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.12in, label={}]
+    \small{\item{
+     \textbf{Skills:} (( skills | join(', ') | le ))
+    }}
+ \end{itemize}
+(% endif %)
+
+%-----------PROJECTS-----------
+(% if projects %)
+\section{Open Source \& Projects}
+  \resumeSubHeadingListStart
+(% for proj in projects %)
+    \resumeProjectHeading
+      {\textbf{(( proj.name | le ))}(% if proj.tech_stack %) $|$ \emph{(( (proj.tech_stack[:4] | join(', ')) | le ))}(% endif %)}{}
+      \resumeItemListStart
+(% if proj.description %)
+        \resumeItem{(( proj.description | le ))}
+(% endif %)
+(% for hl in (proj.highlights or []) %)
+        \resumeItem{(( hl | le ))}
+(% endfor %)
+      \resumeItemListEnd
+
+(% endfor %)
+  \resumeSubHeadingListEnd
+(% endif %)
+
+\end{document}

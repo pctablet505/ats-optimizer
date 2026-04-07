@@ -1,235 +1,214 @@
 # Rahul Kumar — Candidate Profile
-# AI/ML Engineer at Google | Specializing in RL, Quantitative Finance, Computer Vision
-# Source: AlgoTrading project + Samsung/Qualcomm experience
+# Auto-populated from base_resume.tex + GitHub portfolio
 
 personal_info:
   full_name: "Rahul Kumar"
-  email: "stopslavery404@gmail.com"
-  phone: "+91-xxx-xxx-xxxx"
-  location: "Hyderabad, India"
-  linkedin: "https://linkedin.com/in/rahul-kumar"
-  github: "https://github.com/stopslavery404"
-  portfolio: "https://github.com/stopslavery404"
+  email: "work.rahul126@gmail.com"
+  phone: "+91 8709253658"
+  location: "Bengaluru, India"
+  linkedin: "https://www.linkedin.com/in/rahul126/"
+  github: "https://github.com/pctablet505"
+  portfolio: "https://github.com/pctablet505/portfolio/"
 
 summaries:
-  - target_role: "ML/AI Engineer - Reinforcement Learning"
+  - target_role: "Machine Learning Engineer"
     text: >
-      ML/AI engineer at Google Keras Team with expertise in reinforcement learning, 
-      quantitative finance, and computer vision. Currently architecting an algorithmic 
-      trading platform using pure JAX with vectorized Gymnasium environments for 
-      multi-symbol RL training. 4+ years building production ML systems from research 
-      to deployment, including on-device AI, backend services, and DSP-optimized solutions.
-  
-  - target_role: "Quantitative Developer / Quant Trader"
+      Machine Learning Engineer with 3.5+ years of experience architecting Generative AI
+      pipelines, Computer Vision systems, and Scalable ML Infrastructure. Currently at
+      Google (Core ML / Keras), building the bridge between research models and production
+      edge deployment via LiteRT. Expert in optimizing inference latency, developing
+      proprietary synthetic data algorithms, and deploying large-scale backend services.
+      Strong background in LLM Infrastructure and End-to-End System Design.
+
+  - target_role: "GenAI / LLM Engineer"
     text: >
-      Quantitative developer with deep expertise in algorithmic trading, portfolio 
-      management, and RL-based strategy optimization. Developed end-to-end trading 
-      platform for Indian equities (NSE/BSE) with realistic backtesting, risk 
-      management, and multi-agent RL training. Strong foundation in technical analysis, 
-      transaction cost modeling, and performance metrics (Sharpe, Sortino, Calmar).
-  
-  - target_role: "Senior ML Engineer"
+      Generative AI engineer with hands-on production experience at Google implementing
+      Llama 3.1 and Multimodal Gemma 3 in Keras. Deep expertise in quantization
+      (QAT/PTQ, 4-bit/8-bit), LoRA/PEFT fine-tuning, Flash Attention optimization, and
+      JAX/PyTorch/TensorFlow multi-backend serving. Proven track record taking LLMs from
+      research to edge deployment at scale.
+
+  - target_role: "Computer Vision Engineer"
     text: >
-      Senior ML engineer with 4+ years at Google Keras Team and Samsung R&D. 
-      Expert in JAX, TensorFlow, PyTorch, and production ML systems. Specialized 
-      in RL algorithms (PPO, A2C, DQN, SAC), computer vision (detection, segmentation), 
-      and real-time inference optimization. Proven track record building scalable systems 
-      with complex data pipelines and on-device deployment.
+      Computer Vision specialist with 3+ years building production CV systems at Samsung
+      R&D and Google. Developed synthetic dataset generation pipelines producing 10M+
+      samples, real-time multi-face recognition for 10k+ users, and object
+      detection/segmentation models deployed on Android devices. Expert in OpenCV,
+      diffusion-based inpainting, and on-device model optimization.
+
+  - target_role: "Edge AI / On-Device ML Engineer"
+    text: >
+      On-device ML engineer with deep expertise in deploying large models to mobile and
+      edge hardware. At Google, architected the LiteRT (TFLite) export pipeline for
+      KerasHub models including Gemma and Llama. At Qualcomm, optimized GenAI models for
+      NPU/DSP constraints achieving 75% memory bandwidth reduction via QAT. Proficient in
+      Android NDK, JNI, OpenVINO, and Hexagon DSP optimization.
 
 skills:
-  - category: "Programming Languages"
+  - category: "Core ML & Generative AI"
     items:
-      - name: "Python"
-        proficiency: "Expert"
-        years: 6
-      - name: "JAX"
-        proficiency: "Expert"
-        years: 2
-      - name: "C++"
-        proficiency: "Intermediate"
-        years: 3
-      - name: "Java"
-        proficiency: "Intermediate"
-        years: 3
-      - name: "Kotlin"
-        proficiency: "Intermediate"
-        years: 2
-      - name: "JavaScript"
-        proficiency: "Basic"
-        years: 2
-
-  - category: "Deep Learning & AI Frameworks"
-    items:
-      - name: "JAX (CUDA/GPU)"
-        proficiency: "Expert"
-        years: 2
       - name: "Keras"
         proficiency: "Expert"
         years: 3
       - name: "TensorFlow"
-        proficiency: "Advanced"
+        proficiency: "Expert"
         years: 4
       - name: "PyTorch"
-        proficiency: "Advanced"
+        proficiency: "Expert"
         years: 3
-      - name: "Gymnasium (RL Environments)"
-        proficiency: "Expert"
-        years: 2
-      - name: "Stable-Baselines3"
+      - name: "JAX"
         proficiency: "Advanced"
         years: 2
-
-  - category: "Reinforcement Learning"
-    items:
-      - name: "Policy Gradient Methods (PPO, A2C)"
+      - name: "Transformers (Llama/Gemma)"
         proficiency: "Expert"
         years: 2
-      - name: "Value-based Methods (DQN, SAC, TD3)"
+      - name: "Diffusion Models"
         proficiency: "Advanced"
         years: 2
-      - name: "Multi-Agent RL"
+      - name: "Quantization (QAT/PTQ)"
+        proficiency: "Expert"
+        years: 3
+      - name: "Flash Attention"
         proficiency: "Advanced"
         years: 1
-      - name: "Actor-Critic Architectures"
+      - name: "LoRA/PEFT"
         proficiency: "Advanced"
         years: 2
-      - name: "Reward Shaping & Design"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Environment Design"
-        proficiency: "Expert"
-        years: 2
-
-  - category: "Quantitative Finance & Trading"
-    items:
-      - name: "Algorithmic Trading"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Portfolio Management"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Risk Management"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Backtesting Engines"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Technical Analysis"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Transaction Cost Modeling"
-        proficiency: "Advanced"
-        years: 2
-
-  - category: "Data Engineering & Databases"
-    items:
-      - name: "SQLite"
-        proficiency: "Expert"
-        years: 2
-      - name: "Parquet (Data Warehouse)"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Time-Series Data Processing"
-        proficiency: "Expert"
-        years: 3
-      - name: "Data Pipelines & ETL"
-        proficiency: "Advanced"
-        years: 3
-      - name: "NumPy & Pandas"
+      - name: "Scikit-Learn"
         proficiency: "Expert"
         years: 4
+      - name: "Reinforcement Learning"
+        proficiency: "Advanced"
+        years: 2
 
   - category: "Computer Vision"
     items:
-      - name: "Object Detection (YOLOv11, Faster R-CNN)"
-        proficiency: "Advanced"
-        years: 3
-      - name: "Image Segmentation (Mask R-CNN, U-Net)"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Face Recognition & Detection"
+      - name: "OpenCV"
         proficiency: "Expert"
-        years: 3
-      - name: "Synthetic Dataset Generation"
-        proficiency: "Advanced"
-        years: 2
-      - name: "Computer Vision (General)"
-        proficiency: "Advanced"
         years: 4
-
-  - category: "UI & Visualization"
-    items:
-      - name: "Streamlit"
+      - name: "Object Detection"
         proficiency: "Expert"
+        years: 4
+      - name: "Image Segmentation"
+        proficiency: "Expert"
+        years: 3
+      - name: "Face Recognition"
+        proficiency: "Expert"
+        years: 3
+      - name: "Synthetic Data Generation"
+        proficiency: "Expert"
+        years: 3
+      - name: "Image Restoration"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Image Inpainting"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Object Tracking"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Data Science & Analytics"
+    items:
+      - name: "NumPy"
+        proficiency: "Expert"
+        years: 5
+      - name: "Pandas"
+        proficiency: "Expert"
+        years: 5
+      - name: "Statistical Modeling"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Feature Engineering"
+        proficiency: "Expert"
+        years: 4
+      - name: "Time Series Analysis"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Cloud & Infrastructure"
+    items:
+      - name: "Python"
+        proficiency: "Expert"
+        years: 6
+      - name: "FastAPI"
+        proficiency: "Advanced"
         years: 2
       - name: "Flask"
         proficiency: "Advanced"
-        years: 2
-      - name: "Django"
-        proficiency: "Intermediate"
-        years: 2
-      - name: "Matplotlib & Seaborn"
-        proficiency: "Advanced"
         years: 3
-
-  - category: "Mobile Development"
-    items:
-      - name: "Android Development (Kotlin/Java)"
-        proficiency: "Advanced"
-        years: 4
-      - name: "ML Model Porting"
-        proficiency: "Advanced"
-        years: 3
-      - name: "On-device AI Optimization"
-        proficiency: "Advanced"
-        years: 3
-      - name: "Sensor Integration & IoT"
-        proficiency: "Advanced"
-        years: 2
-
-  - category: "Tools & Infrastructure"
-    items:
-      - name: "Git"
-        proficiency: "Expert"
-        years: 5
       - name: "Docker"
         proficiency: "Advanced"
         years: 3
-      - name: "Linux/WSL"
+      - name: "GCP"
+        proficiency: "Intermediate"
+        years: 1
+      - name: "REST APIs"
         proficiency: "Expert"
         years: 4
-      - name: "Zerodha Kite Connect API"
+      - name: "CI/CD"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "On-Device & Mobile"
+    items:
+      - name: "LiteRT (TFLite)"
         proficiency: "Expert"
+        years: 2
+      - name: "OpenVINO"
+        proficiency: "Advanced"
+        years: 1
+      - name: "Android NDK"
+        proficiency: "Advanced"
+        years: 3
+      - name: "JNI"
+        proficiency: "Advanced"
+        years: 3
+      - name: "DSP Optimization (Hexagon)"
+        proficiency: "Intermediate"
+        years: 1
+      - name: "Android Development"
+        proficiency: "Advanced"
+        years: 3
+
+  - category: "Languages"
+    items:
+      - name: "C++"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Java"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Kotlin"
+        proficiency: "Intermediate"
+        years: 2
+      - name: "SQL"
+        proficiency: "Advanced"
+        years: 4
+      - name: "Bash"
+        proficiency: "Advanced"
+        years: 4
+      - name: "R"
+        proficiency: "Intermediate"
         years: 2
 
 experience:
-  - company: "Google"
-    title: "Software Engineer (Machine Learning)"
-    location: "Hyderabad, India"
+  - company: "Google — Core ML (Keras)"
+    title: "Software Engineer 2, Machine Learning"
+    location: "Bengaluru, India"
     start_date: "2025-02"
     end_date: null
     bullets:
-      - text: "Working with Keras Team on deep learning framework improvements and optimization"
-        tags: ["Keras", "TensorFlow", "Deep Learning", "Python"]
-
-  - company: "Personal Project — AlgoTrading Platform"
-    title: "Lead Architect, RL & Quantitative Developer"
-    location: "Remote"
-    start_date: "2024-09"
-    end_date: null
-    bullets:
-      - text: "Architected production-grade algorithmic trading platform for Indian equities (NSE/BSE) with modular data layer (SQLite+Parquet), simulation engine, RL lab, and Streamlit UI"
-        tags: ["JAX", "Gymnasium", "Python", "RL", "Trading", "Quantitative Finance", "SQLite"]
-      - text: "Integrated Zerodha Kite API to download 750+ instruments across 7 granularities with pause/resume capabilities and comprehensive data validation"
-        tags: ["Kite-Connect", "Data Engineering", "Time-Series", "API Integration"]
-      - text: "Engineered modular RL environments supporting heuristic, signal-based, and learning agents with shared parameters across multiple assets"
-        tags: ["Gymnasium", "RL Environments", "Python", "Multi-Agent RL"]
-      - text: "Optimized JAX-based agents (PPO, A2C, DQN) with CUDA GPU acceleration achieving vectorized rollouts across 128 parallel environments"
-        tags: ["JAX", "PPO", "A2C", "DQN", "GPU", "CUDA", "Vectorization"]
-      - text: "Built realistic backtesting engine with transaction costs, slippage, and comprehensive metrics (Sharpe, Sortino, Calmar, max drawdown)"
-        tags: ["Backtesting", "Risk Management", "Performance Metrics", "Trading"]
-      - text: "Developed extensive documentation: 4000+ line architecture doc, API reference, CLI (30+ commands), testing framework (70%+ coverage)"
-        tags: ["Documentation", "Architecture", "CLI", "Testing"]
+      - text: "Architected the end-to-end LiteRT (TFLite) export pipeline enabling KerasHub GenAI models (Gemma, Llama) to run on mobile/edge devices, bridging research and production deployment"
+        tags: ["LiteRT", "TFLite", "Keras", "Gemma", "Llama", "edge deployment", "GenAI", "mobile"]
+      - text: "Designed centralized inference benchmarking suite evaluating throughput (tokens/sec) and latency; automated regression testing across TPU/GPU clusters to identify optimal batch sizes"
+        tags: ["benchmarking", "inference", "TPU", "GPU", "performance", "automation"]
+      - text: "Spearheaded Keras-native implementation for Llama 3.1 and Multimodal Gemma 3; resolved 4-bit/8-bit quantization instabilities and optimized JAX backend operators for large-scale inference"
+        tags: ["Llama", "Gemma", "quantization", "JAX", "LLM", "multimodal", "inference optimization"]
+      - text: "Led architectural migration of mission-critical Ad-recommendation model (Adbrain) to Keras 3; solved cross-framework interoperability issues (Torch/JAX/TF) and fixed OpenVINO and Flash Attention bottlenecks"
+        tags: ["Keras", "PyTorch", "JAX", "TensorFlow", "OpenVINO", "Flash Attention", "migration", "recommendation system"]
+      - text: "Debugged image processing stack; identified and patched segmentation faults in core libraries (giflib); security patches adopted by open-source community"
+        tags: ["debugging", "C++", "open source", "security", "image processing"]
 
   - company: "Qualcomm"
     title: "Machine Learning Engineer"
@@ -237,183 +216,118 @@ experience:
     start_date: "2024-09"
     end_date: "2025-01"
     bullets:
-      - text: "Implemented on-device AI solutions with DSP-optimized inference for SOTA computer vision applications"
-        tags: ["On-device AI", "DSP Optimization", "Computer Vision", "TensorFlow Lite"]
-      - text: "Developed Android demos showcasing real-time face detection, object recognition, and edge inference optimization"
-        tags: ["Android", "Kotlin", "Face Detection", "YOLO", "Real-time Inference"]
+      - text: "Redesigned 'Magic Keeper' generative inpainting feature for Snapdragon Summit; deployed GenAI models for object removal and image completion optimized for NPU/DSP latency constraints"
+        tags: ["generative AI", "inpainting", "NPU", "DSP", "Snapdragon", "mobile", "object removal"]
+      - text: "Implemented Quantization Aware Training (QAT) reducing memory bandwidth by 75% for high-fidelity image processing tasks on mobile hardware"
+        tags: ["QAT", "quantization", "mobile", "memory optimization", "image processing", "on-device"]
+      - text: "Collaborated with Android framework teams to build voice-controlled Camera Copilot; integrated ML inference directly into native camera stack for real-time media manipulation"
+        tags: ["Android", "real-time", "camera", "ML inference", "mobile", "voice control"]
 
-  - company: "Samsung R&D Institute India (SRI-N)"
-    title: "Research & Development Engineer"
-    location: "Noida, India"
-    start_date: "2022-07"
-    end_date: "2025-01"
-    bullets:
-      - text: "Received MD Appreciation Award for developing SRI-N Satyapan anti-cheat proctored exam platform with face recognition and behavioral monitoring"
-        tags: ["Face Recognition", "Computer Vision", "Android", "Web Backend", "Python", "Achievement"]
-      - text: "Led end-to-end development: custom face embedding classifier (10K+ faces, 87ms search vs 1200ms baseline), exam portal, Android app, real-time monitoring"
-        tags: ["Face Recognition", "Classification", "Android", "Database Optimization"]
-      - text: "Engineered Knox Capture— barcode damage detection system generating photorealistic synthetic datasets, achieving 70-75% decoding accuracy (vs 67% baseline)"
-        tags: ["Computer Vision", "YOLO", "U-Net", "GAN", "Synthetic Data", "Android"]
-      - text: "Implemented distraction detection, car crash detection, and phone drop detection systems using sensor fusion and lightweight ML models"
-        tags: ["Sensor Fusion", "IoT", "Mobile ML", "Statistical Modeling"]
-
-  - company: "Samsung R&D Institute India (SRI-N)"
-    title: "Machine Learning Intern"
+  - company: "Samsung R&D Institute (SRI-N)"
+    title: "Research & Development Engineer — Computer Vision & Services"
     location: "Noida, India"
     start_date: "2022-01"
-    end_date: "2022-06"
+    end_date: "2024-08"
     bullets:
-      - text: "Explored generative AI using Cycle GAN for image-to-image translation and learned Android app development fundamentals"
-        tags: ["GAN", "Generative AI", "Android", "Deep Learning"]
+      - text: "Built Knox Capture: complete damaged barcode scanning solution generating 10M+ synthetic training samples; boosted accuracy from 70% to 90% using YOLOv11 detection, Mask R-CNN segmentation, and U-Net restoration"
+        tags: ["synthetic data", "object detection", "segmentation", "YOLOv11", "Mask R-CNN", "U-Net", "barcode", "Android"]
+      - text: "Developed multi-face recognition system for real-time camera and offline video; optimized database search from O(n) linear to O(log n) complexity; enabled authentication for 10k+ users"
+        tags: ["face recognition", "real-time", "optimization", "computer vision", "Android", "authentication"]
+      - text: "Architected SRI-N Satyapan proctoring platform: built Backend Server, Web Portal, and Android App integrating face/gaze detection; served 2,000+ concurrent users with anti-cheat capabilities"
+        tags: ["backend", "full stack", "Android", "face detection", "gaze detection", "concurrent users", "system design"]
+      - text: "Developed distraction detection AI using facial expressions, eye movement, yawn detection, and head pose estimation; achieved 87% accuracy for attention monitoring"
+        tags: ["facial expression", "eye tracking", "head pose", "attention monitoring", "computer vision"]
+      - text: "Replaced heavy deep learning drop detection model with feature-engineered ML solution; reduced model size by 99% (millions of params to <20) and power consumption by 95% on-device"
+        tags: ["model compression", "feature engineering", "on-device", "sensor fusion", "optimization", "power efficiency"]
+      - text: "Built car crash detection system using device sensors to automatically send SOS to emergency contacts"
+        tags: ["sensor fusion", "anomaly detection", "mobile", "safety"]
 
 education:
-  - institution: "MIT MicroMasters in Statistics and Data Science"
-    degree: "MicroMasters"
-    graduation_date: "2023"
-    gpa: null
-    coursework: ["Statistics", "Data Analysis", "Machine Learning", "Probability", "Inference"]
+  - institution: "Massachusetts Institute of Technology (MIT)"
+    degree: "MicroMasters in Statistics and Data Science"
+    graduation_date: "2023-06"
+    location: "Remote"
+    notes: "Graduate-level credential comprising 5 intensive courses and proctored exams (equivalent to 1 semester of Master's coursework)"
+    coursework: ["Machine Learning", "Statistics", "Data Analysis", "Probability", "Computational Thinking"]
 
-  - institution: "BIT Sindri"
-    degree: "B.Tech Computer Science & Engineering"
-    graduation_date: "2022-05"
-    gpa: null
-    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Databases", "Machine Learning", "Computer Vision"]
+  - institution: "Birsa Institute of Technology, Sindri"
+    degree: "B.Tech in Computer Science and Engineering"
+    graduation_date: "2022-06"
+    location: "Dhanbad, India"
+    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Computer Networks", "Linear Algebra"]
 
 certifications:
-  - name: "MIT Machine Learning with Python — From Linear Models to Deep Learning"
-    issuer: "MIT online (edX)"
-    date: "2023-06"
-  - name: "CS50 Introduction to Artificial Intelligence with Python"
-    issuer: "Harvard University (edX)"
-    date: "2021-12"
-  - name: "MIT MicroMasters in Statistics and Data Science (Complete)"
-    issuer: "MIT online"
-    date: "2023-06"
+  - name: "Machine Learning with Python"
+    issuer: "MIT / edX"
+    date: "2022-01"
+    url: "https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d"
+  - name: "Fundamentals of Statistics"
+    issuer: "MIT / edX"
+    date: "2021-08"
+    url: "https://courses.edx.org/certificates/3c59035943454549990f2d2de7f49e9f"
+  - name: "CS50 AI with Python"
+    issuer: "Harvard / edX"
+    date: "2021-06"
+    url: "https://cs50.harvard.edu/certificates/2b1773c1-473d-4a7b-89ae-460d23154126"
+  - name: "Advanced Algorithms"
+    issuer: "HackerRank"
+    date: "2021-03"
+    url: "https://www.hackerrank.com/certificates/fc7b9af8aac8"
 
 projects:
-  - name: "Algorithmic Trading Platform (RL Alpha Labs)"
-    description: "Production-grade algorithmic trading platform for Indian equities (NSE/BSE) with JAX-based RL agents, realistic backtesting, and risk management"
-    tech_stack: ["JAX", "Gymnasium", "SQLite", "Parquet", "Streamlit", "Zerodha Kite API", "Python 3.13"]
-    url: null
+  - name: "Keras & KerasHub — Open Source Contributor"
+    description: "Active contributor to Google's Keras and KerasHub repositories; implemented LiteRT export pipeline and backend compatibility for GenAI models (Gemma, Llama)"
+    tech_stack: ["Keras", "TensorFlow", "LiteRT", "TFLite", "Python", "JAX", "GenAI"]
+    url: "https://github.com/keras-team/keras"
     highlights:
-      - "Pure JAX-based RL agents (PPO, A2C, DQN) with CUDA GPU acceleration"
-      - "Vectorized Gymnasium environments: 128 parallel rollouts for multi-symbol training"
-      - "Integrated Kite API for 750+ NSE/BSE instruments across 7 granularities"
-      - "Realistic backtesting: transaction costs, slippage, comprehensive metrics"
-      - "18-tab Streamlit UI for portfolio management, paper trading simulation"
-      - "CLI with 30+ commands using deferred imports for fast startup"
-      - "Risk management: drawdown limits, position sizing, portfolio constraints"
-      - "4000+ line architecture doc, API reference, 70%+ test coverage"
+      - "Implemented end-to-end LiteRT export pipeline for mobile/edge GenAI deployment"
+      - "Backend compatibility work for Llama 3.1 and Multimodal Gemma 3"
 
-  - name: "SRI-N Satyapan (Anti-Cheat Proctored Exam Platform)"
-    description: "Enterprise anti-cheat proctoring platform with face recognition and behavioral monitoring"
-    tech_stack: ["Python", "TensorFlow/Keras", "Android (Kotlin/Java)", "Flask", "PostgreSQL", "WebRTC"]
+  - name: "Algorithmic Trading System (RL Alpha Labs)"
+    description: "High-frequency trading bot using Reinforcement Learning and Zerodha APIs for the Indian stock market; real-time data ingestion and automated order execution"
+    tech_stack: ["Python", "Reinforcement Learning", "REST APIs", "Time Series", "NumPy", "Pandas"]
     url: null
     highlights:
-      - "Face recognition-based authentication for 10K+ candidates"
-      - "Custom face embedding classifier: 87ms search (vs 1200ms baseline on Android tablets)"
-      - "Real-time behavioral monitoring for fraud detection and compliance"
-      - "Full-stack solution: web portal, Android app, centralized server"
-      - "MD Appreciation Award from Samsung Research leadership"
+      - "Integrated RL policy with live market data for automated portfolio management"
+      - "Real-time order execution via Zerodha broker APIs"
 
-  - name: "Knox Capture (Damaged Barcode Scanner)"
-    description: "Mobile barcode scanning solution with computer vision for damaged/degraded barcodes"
-    tech_stack: ["Python", "YOLOv11", "U-Net", "Mask R-CNN", "ResNet", "Android", "TensorFlow Lite"]
-    url: null
-    highlights:
-      - "Photorealistic synthetic dataset generation using geometric transformations and physics"
-      - "Detection (YOLOv11) + Segmentation (Mask R-CNN) + Correction (U-Net) + Classification (ResNet)"
-      - "70-75% decoding accuracy (vs 67% baseline on damaged barcodes)"
-      - "Optimized on-device Android deployment with hardware-accelerated inference"
-      - "Confidence scoring for damage assessment; intelligent abstention on high damage"
-
-  - name: "Face Recognition System"
-    description: "Real-time multi-face recognition for live camera feeds and offline video processing"
-    tech_stack: ["Python", "TensorFlow/Keras", "Android", "OpenCV", "PostgreSQL"]
-    url: null
-    highlights:
-      - "Real-time face recognition for live and video feeds"
-      - "Logarithmic database search: 87ms (vs 1200ms linear search on tablets)"
-      - "Custom embedding classifier trained on proprietary dataset"
-      - "Cross-platform deployment: Android, Windows, Linux"
-      - "Integrated surveillance and access control systems"
+honors:
+  - "MD Appreciation Award — Recognized by Samsung Research Managing Director for innovation in Knox Security"
+  - "Top 0.05% Global Rank — Ranked 1026 out of 2.2M+ participants in HackerRank Algorithms"
+  - "Gold Medal, HackFest 2020 — Global Rank 29 with rating 2042"
+  - "GATE Qualified — All India Rank 5648 in Computer Science"
+  - "CodeVita Season 9 & 10 Finalist"
 
 qa_bank:
-  - question_pattern: "years of experience"
-    answer: "4+ years in ML/AI engineering, 2+ years in quantitative finance and RL"
-  - question_pattern: "authorized to work"
-    answer: "Yes, Indian citizen with valid passport"
-  - question_pattern: "require.*sponsorship|visa"
-    answer: "No sponsorship required for India-based roles; open to discussing visa sponsorship for international positions"
-  - question_pattern: "willing to relocate"
-    answer: "Yes, open to relocation within India or internationally for the right opportunity"
-  - question_pattern: "salary|compensation|expected.*pay"
-    answer: "INR 18-35 LPA depending on role, company, and total compensation package"
-  - question_pattern: "start date|available to start"
-    answer: "Available on short notice / can discuss based on opportunity"
+  - question_pattern: "years of experience|how many years"
+    answer: "3.5"
+  - question_pattern: "authorized to work|work authorization|legally authorized|eligible to work"
+    answer: "Yes, authorized to work in India"
+  - question_pattern: "require.*sponsorship|need.*visa|visa.*sponsorship"
+    answer: "Open to discussion"
+  - question_pattern: "willing to relocate|open to relocation"
+    answer: "Yes, open to relocation"
+  - question_pattern: "remote|work from home|hybrid"
+    answer: "Open to remote, hybrid, or on-site"
+  - question_pattern: "salary|compensation|expected.*pay|ctc"
+    answer: "Open to discussion based on the total compensation package"
+  - question_pattern: "start date|when can you start|notice period"
+    answer: "1 month notice period"
+  - question_pattern: "current company|currently working|current employer"
+    answer: "Google — Core ML (Keras Team)"
+  - question_pattern: "why.*leaving|reason for leaving|looking for change"
+    answer: "Seeking new challenges and broader impact in AI/ML product development"
   - question_pattern: "gender|race|ethnicity|veteran|disability"
-    answer: "Prefer not to answer"
-  - question_pattern: "work.*from.*home|remote|wfh"
-    answer: "Prefer hybrid or remote work; open to flexible arrangements"
-  - question_pattern: "notice.*period|leaving.*current"
-    answer: "Can provide notice as per professional standards; currently exploring opportunities"
-  - question_pattern: "career goal|long.*term|future"
-    answer: "Build cutting-edge ML systems in quantitative finance, RL, and AI; eventual goal to lead ML research team or found fintech startup"
-
-target_industries:
-  - "Fintech / Quantitative Trading"
-  - "AI/Machine Learning"
-  - "Algorithmic Trading Firms"
-  - "Tech Giants (Google, Meta, Microsoft, etc.)"
-  - "Robotics & Autonomous Systems"
-  - "Computer Vision"
-  - "On-Device AI / Edge Computing"
-
-target_companies:
-  - "Zerodha"
-  - "Navi"
-  - "DeFi Platforms"
-  - "Google"
-  - "Meta"
-  - "Apple"
-  - "Microsoft"
-  - "DeepMind"
-  - "OpenAI"
-  - "Quantitative Trading Firms"
-
-target_roles:
-  - "ML/AI Engineer (Reinforcement Learning)"
-  - "Quantitative Developer"
-  - "Senior ML Engineer"
-  - "Research Scientist"
-  - "ML Infrastructure Engineer"
-  - "Quant Trader / Quant Developer"
-  - "Computer Vision Engineer"
-
-salary_expectations:
-  - currency: "INR"
-    min: 1_800_000
-    max: 3_500_000
-    preferred: 2_500_000
-
-work_preferences:
-  - "Remote / Hybrid"
-  - "Relocation to tech hubs (Bengaluru, Hyderabad, Mumbai)"
-  - "International opportunities"
-  - "Contract / Full-time"
-
-keywords_for_matching:
-  - "JAX"
-  - "Reinforcement Learning"
-  - "Quantitative Finance"
-  - "Algorithmic Trading"
-  - "PyTorch"
-  - "TensorFlow"
-  - "Computer Vision"
-  - "Android ML"
-  - "GPU Optimization"
-  - "Face Recognition"
-  - "RL Algorithms"
-  - "Backtesting"
-  - "Risk Management"
-  - "On-device AI"
+    answer: "Prefer not to say"
+  - question_pattern: "linkedin|linkedin profile"
+    answer: "https://www.linkedin.com/in/rahul126/"
+  - question_pattern: "github|portfolio"
+    answer: "https://github.com/pctablet505"
+  - question_pattern: "cover letter|why.*interested|why.*company|why.*role"
+    answer: >
+      I am deeply passionate about building AI systems that operate at the intersection of
+      research and real-world deployment. My experience spanning Google, Qualcomm, and Samsung
+      has given me a strong foundation in taking ML models from prototype to production at scale,
+      and I am excited to bring that expertise to your team.
+  - question_pattern: "highest.*education|degree"
+    answer: "B.Tech Computer Science + MIT MicroMasters in Statistics and Data Science"

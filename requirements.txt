@@ -5,13 +5,16 @@ sqlalchemy>=2.0.0
 pydantic>=2.0.0
 pydantic-settings>=2.0.0
 pyyaml>=6.0
+httpx>=0.27.0
+
+# LLM — xAI Grok via OpenAI-compatible API
+openai>=1.30.0
 
 # Profile & Resume Parsing
 pdfminer.six>=20221105
 python-docx>=1.0.0
 
 # NLP & Analysis
-spacy>=3.7.0
 scikit-learn>=1.4.0
 rapidfuzz>=3.6.0
 
@@ -31,7 +34,6 @@ keyring>=24.0.0
 # Testing
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
-httpx>=0.27.0
 
 # Notifications
 python-telegram-bot>=21.0

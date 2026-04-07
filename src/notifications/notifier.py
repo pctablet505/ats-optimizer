@@ -43,20 +43,56 @@ class ConsoleNotifier:
 
 
 class EmailNotifier:
-    """Send notifications via email. Stub implementation."""
+    """Send notifications via email using SMTP."""
 
-    def __init__(self, smtp_host: str = "", smtp_port: int = 587, email: str = ""):
+    def __init__(
+        self,
+        smtp_host: str = "",
+        smtp_port: int = 587,
+        email: str = "",
+        password: str = "",
+        use_tls: bool = True,
+    ):
         self.smtp_host = smtp_host
         self.smtp_port = smtp_port
         self.email = email
+        self.password = password
+        self.use_tls = use_tls
 
     def send(self, notification: Notification):
-        """Send email notification. Stub — logs instead of sending."""
-        # TODO: Implement with smtplib when credentials are configured
-        logger.info(
-            f"[EMAIL STUB] Would send to {self.email}: "
-            f"{notification.title} — {notification.body}"
-        )
+        """Send email notification via SMTP. Falls back to logging if not configured."""
+        if not (self.smtp_host and self.email and self.password):
+            logger.info(
+                f"[EMAIL STUB] Would send to {self.email}: "
+                f"{notification.title} — {notification.body}"
+            )
+            return
+
+        import smtplib
+        from email.mime.text import MIMEText
+        from email.mime.multipart import MIMEMultipart
+
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = f"[ATS Optimizer] {notification.title}"
+        msg["From"] = self.email
+        msg["To"] = self.email
+
+        body = f"{notification.title}\n\n{notification.body}\n\nTimestamp: {notification.timestamp}"
+        msg.attach(MIMEText(body, "plain"))
+
+        try:
+            if self.use_tls:
+                with smtplib.SMTP(self.smtp_host, self.smtp_port) as server:
+                    server.starttls()
+                    server.login(self.email, self.password)
+                    server.sendmail(self.email, self.email, msg.as_string())
+            else:
+                with smtplib.SMTP_SSL(self.smtp_host, self.smtp_port) as server:
+                    server.login(self.email, self.password)
+                    server.sendmail(self.email, self.email, msg.as_string())
+            logger.info(f"Email sent: {notification.title}")
+        except Exception as e:
+            logger.error(f"Email send failed: {e}")
 
 
 class NotificationManager:
