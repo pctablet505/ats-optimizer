@@ -1,0 +1,189 @@
+\documentclass[10pt, letterpaper]{article}
+
+%-------------------------
+% Packages
+%-------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{multicol}
+
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+\definecolor{midnightblue}{RGB}{25, 25, 112}
+\definecolor{darkgray}{RGB}{70, 70, 70}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\color{midnightblue}\bfseries
+}{}{0em}{}[\color{midnightblue}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small\color{darkgray} #2} \\
+      \textit{\small#3} & \textit{\small\color{darkgray} #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=midnightblue,
+    filecolor=magenta,
+    urlcolor=midnightblue,
+}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{\color{midnightblue} Rahul Kumar}} \\ \vspace{4pt}
+    {\Large \textmd{Software Engineer | Abuse Detection, GenAI Safety \& Behavioral Analysis}} \\ \vspace{4pt}
+    \small
+    +91 8709253658 \ $|$ \
+    \href{mailto:work.rahul126@gmail.com}{work.rahul126@gmail.com} \ $|$ \
+    \href{https://www.linkedin.com/in/rahul126/}{linkedin.com/in/rahul126} \ $|$ \
+    \href{https://github.com/pctablet505}{github.com/pctablet505} \ $|$ \
+    \href{https://github.com/pctablet505/portfolio/}{Portfolio}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\vspace{2pt}
+\color{darkgray}
+\small{Software engineer with 3.5+ years building \textbf{ML classification systems}, behavioral anomaly detection, and security infrastructure at Google (Core ML) and Samsung R\&D. Expert in \textbf{Python} and \textbf{C++} with hands-on experience implementing security patches for production ML infrastructure and building anti-cheat and behavioral detection pipelines serving \textbf{2,000+ concurrent users}. Developed real-time distraction and behavioral analysis models at Samsung achieving \textbf{87\% accuracy} on multi-signal classification using facial, eye-tracking, and temporal signals.}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google -- Core ML (Keras)}{Feb 2025 -- Present}
+      {Software Engineer 2, Machine Learning}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Core Framework Security \& Reliability:} Conducted deep-dive debugging of the image processing stack, identifying \textbf{security vulnerabilities and segmentation faults} in core libraries (e.g., \textit{giflib}). Implemented security patches that were reviewed and adopted by the open-source community, strengthening the framework security posture.}
+        \resumeItem{\textbf{GenAI Model Serving:} Spearheaded Keras-native implementation for \textbf{Llama 3.1} and \textbf{Multimodal Gemma 3} — providing direct exposure to LLM-based system behavior, model output analysis, and identifying failure modes at inference time applicable to LLM-based content rating systems.}
+        \resumeItem{\textbf{Large-Scale Migration (Adbrain):} Led cross-framework migration of a production ad-recommendation model to Keras 3, resolving complex interoperability failures (Torch/JAX/TF) and ensuring model output fidelity through extensive evaluation and debugging.}
+        \resumeItem{\textbf{Inference Benchmarking System:} Built centralized ML evaluation infrastructure with automated regression testing across TPU/GPU clusters to detect model quality degradation and behavioral anomalies in production serving pipelines.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Qualcomm}{Sep 2024 -- Jan 2025}
+      {Machine Learning Engineer}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Multimedia Optimization:} Implemented \textbf{Quantization Aware Training (QAT)}, reducing memory bandwidth by \textbf{75\%} for on-device GenAI inference while preserving model output quality — demonstrating disciplined analysis of model behavior under aggressive optimization.}
+        \resumeItem{\textbf{Generative In-Painting (Magic Keeper):} Deployed Generative AI models for image completion on Snapdragon devices. Analyzed and validated GenAI model outputs to meet production quality and safety constraints under NPU/DSP latency requirements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Samsung R\&D Institute (SRI-N)}{Jan 2022 -- Aug 2024}
+      {Research \& Development Engineer (CV \& Services)}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{SRI-N Satyapan (Anti-Cheat \& Behavioral Anomaly Detection):} Architected a complete \textbf{behavioral fraud detection} platform with anti-cheat classification, face recognition authentication, and gaze-based anomaly flagging. Designed and deployed Backend, Web Portal, and Android App serving \textbf{2,000+ concurrent users} with real-time ML-based abuse detection.}
+        \resumeItem{\textbf{Distraction Detection (Multi-Signal Behavioral Classifier):} Built a \textbf{behavioral analysis ML pipeline} using facial expressions, eye movement, yawn detection, head pose, and temporal patterns — achieving \textbf{87\% accuracy} on multi-class attention/distraction classification. Directly applicable to user behavioral anomaly detection at scale.}
+        \resumeItem{\textbf{Face Recognition Engine:} Developed real-time multi-face recognition with database optimized to logarithmic complexity, supporting identity verification and anomalous account detection for \textbf{10k+ users}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS \& OPEN SOURCE-----------
+\section{Projects \& Open Source}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Keras \& Keras Hub} $|$ \emph{Active Contributor}}{Feb 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{LiteRT Export Pipeline} and GenAI model backend compatibility. Security-focused contributions include reviewing and validating model export correctness. Repositories: \href{https://github.com/keras-team/keras}{Keras}, \href{https://github.com/keras-team/keras-hub}{Keras Hub} $|$ Profile: \href{https://github.com/pctablet505}{\color{midnightblue}github.com/pctablet505}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology (MIT)}{Remote}
+      {\href{https://micromasters.mit.edu/ds}{MicroMasters in Statistics and Data Science}}{Feb 2021 -- Jun 2023}
+      \vspace{-4pt}
+      \small{\item{\textit{Graduate-level credential comprising 5 intensive courses and proctored exams (Equivalent to 1 semester of Master's coursework).}}}
+    \resumeSubheading
+      {Birsa Institute of Technology, Sindri}{Dhanbad, India}
+      {B.Tech in Computer Science and Engineering}{Aug 2018 -- Jun 2022}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{MD Appreciation Award:} Recognized by the Managing Director at Samsung Research for innovation in Knox Security.}
+    \resumeItem{\textbf{Top 0.05\% Global Rank:} Ranked 1026 out of 2.2M+ participants in HackerRank Algorithms.}
+    \resumeItem{\textbf{Gold Medal - HackFest 2020:} Secured Global Rank 29 with a rating of 2042.}
+    \resumeItem{\textbf{GATE Qualified:} All India Rank 5648 in Computer Science.}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \small{
+    \textbf{MIT (edX):} \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Machine Learning with Python}, \href{https://courses.edx.org/certificates/3c59035943454549990f2d2de7f49e9f}{Fundamentals of Statistics}, \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Data Analysis} $|$
+    \textbf{Harvard (edX):} \href{https://cs50.harvard.edu/certificates/2b1773c1-473d-4a7b-89ae-460d23154126}{CS50 AI with Python} $|$
+    \textbf{HackerRank:} \href{https://www.hackerrank.com/certificates/fc7b9af8aac8}{Adv. Algorithms}
+  }
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.12in, label={}]
+    \small{\item{
+     \textbf{Core ML \& Generative AI:} Keras, JAX, TensorFlow, PyTorch, Transformers (Llama/Gemma), Quantization (QAT/PTQ), Scikit-Learn, Reinforcement Learning
+    }}
+    \small{\item{
+     \textbf{Data Science \& Analytics:} NumPy, Pandas, Matplotlib, SciPy, Statistical Modeling, Feature Engineering, Time Series Analysis
+    }}
+    \small{\item{
+     \textbf{Computer Vision:} Face Recognition, Image Segmentation, Synthetic Data Generation, Eye Tracking, Object Detection/Tracking, OpenCV
+    }}
+    \small{\item{
+     \textbf{Cloud \& Infrastructure:} Python (Flask/FastAPI), Docker, CI/CD, GCP, REST APIs
+    }}
+    \small{\item{
+     \textbf{Languages:} Python, C++, Java, SQL, Bash, R
+    }}
+    \small{\item{
+     \textbf{CS Fundamentals:} Data Structures, Algorithms, System Design, Linear Algebra, Probability
+    }}
+    \small{\item{
+     \textbf{Tools:} Git, Linux, Android Studio
+    }}
+ \end{itemize}
+
+\end{document}

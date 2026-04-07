@@ -1,0 +1,195 @@
+\documentclass[10pt, letterpaper]{article}
+
+%-------------------------
+% Packages
+%-------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{multicol}
+
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+\definecolor{midnightblue}{RGB}{25, 25, 112}
+\definecolor{darkgray}{RGB}{70, 70, 70}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\color{midnightblue}\bfseries
+}{}{0em}{}[\color{midnightblue}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small\color{darkgray} #2} \\
+      \textit{\small#3} & \textit{\small\color{darkgray} #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=midnightblue,
+    filecolor=magenta,
+    urlcolor=midnightblue,
+}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{\color{midnightblue} Rahul Kumar}} \\ \vspace{4pt}
+    {\Large \textmd{Software Engineer | Full-Stack Development, GenAI Integration \& Collaborative Systems}} \\ \vspace{4pt}
+    \small
+    +91 8709253658 \ $|$ \
+    \href{mailto:work.rahul126@gmail.com}{work.rahul126@gmail.com} \ $|$ \
+    \href{https://www.linkedin.com/in/rahul126/}{linkedin.com/in/rahul126} \ $|$ \
+    \href{https://github.com/pctablet505}{github.com/pctablet505} \ $|$ \
+    \href{https://github.com/pctablet505/portfolio/}{Portfolio}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\vspace{2pt}
+\color{darkgray}
+\small{Software engineer with 3.5+ years in \textbf{full-stack development} and GenAI infrastructure across Google (Core ML), Qualcomm, and Samsung R\&D. Expert in \textbf{Python}, \textbf{Java}/\textbf{Kotlin} backend, and \textbf{JavaScript} frontend — with hands-on GenAI experience implementing \textbf{Llama 3.1} and \textbf{Multimodal Gemma 3} production pipelines and complete full-stack services spanning backend, web portal, and Android app. Delivered real-time GenAI media features at Qualcomm for Snapdragon Summit with \textbf{75\% memory bandwidth reduction}.}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google -- Core ML (Keras)}{Feb 2025 -- Present}
+      {Software Engineer 2, Machine Learning}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{GenAI Pipeline Implementation:} Implemented Keras-native \textbf{GenAI serving infrastructure} for \textbf{Llama 3.1} and \textbf{Multimodal Gemma 3} production pipelines. Authored JAX backend operators, resolved quantization instabilities (4-bit/8-bit), and ensured end-to-end GenAI feature delivery across multiple serving targets.}
+        \resumeItem{\textbf{LiteRT (TFLite) Export Ecosystem:} Architected the complete export pipeline enabling KerasHub GenAI models (Gemma, Llama) to mobile/edge devices, bridging research GenAI capabilities to production user-facing features across deployment environments.}
+        \resumeItem{\textbf{Large-Scale Migration (Adbrain):} Led full migration of a production model to Keras 3, resolving cross-framework compatibility issues (Torch/JAX/TF) and integrating OpenVINO and Flash Attention — demonstrating end-to-end ownership of complex multi-component engineering systems.}
+        \resumeItem{\textbf{Core Framework Reliability:} Conducted deep-dive debugging of core library stack, identifying and patching segmentation faults (\textit{giflib}) with security patches adopted by the open-source community — demonstrating investment in production system reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Qualcomm}{Sep 2024 -- Jan 2025}
+      {Machine Learning Engineer}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Generative In-Painting -- GenAI Media Features:} Built and shipped the "Magic Keeper" \textbf{GenAI-powered media feature} for Snapdragon Summit — deploying Generative AI models for real-time object removal and image completion in a user-facing Android product under tight NPU/DSP latency constraints.}
+        \resumeItem{\textbf{Native Integration (Camera Copilot):} Developed a \textbf{full-stack Android feature} — voice-controlled AI assistant integrating ML inference into the native camera stack, collaborating across Android framework, hardware, and ML teams to deliver a complete end-to-end feature.}
+        \resumeItem{\textbf{Multimedia Optimization:} Implemented Quantization Aware Training (QAT), achieving \textbf{75\% memory bandwidth reduction} for on-device GenAI inference while maintaining production-grade output quality.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Samsung R\&D Institute (SRI-N)}{Jan 2022 -- Aug 2024}
+      {Research \& Development Engineer (CV \& Services)}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{SRI-N Satyapan (Full-Stack Java/Python + Android):} Architected and delivered from scratch a \textbf{complete full-stack product} — \textbf{Java/Python Backend Server} with REST APIs, \textbf{JavaScript Web Portal} with real-time data feeds, and \textbf{Android App} (Java/Kotlin) with integrated ML features, serving \textbf{2,000+ concurrent users} in production.}
+        \resumeItem{\textbf{Image Restoration (Research):} Prototyped GenAI-adjacent algorithms for shadow removal and document noise reduction in images, contributing to core imaging features — experience directly applicable to AI-powered media enhancement in collaborative creation tools.}
+        \resumeItem{\textbf{Knox Capture:} Built a complete ML pipeline (detection, correction, decoding, segmentation) with \textbf{10M+ synthetic training samples}. Boosted model accuracy from 70\% to \textbf{90\%}, demonstrating ownership of AI feature quality from data to deployment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS \& OPEN SOURCE-----------
+\section{Projects \& Open Source}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Keras \& Keras Hub} $|$ \emph{Active Contributor}}{Feb 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{LiteRT Export Pipeline} and GenAI (Llama/Gemma) model backend compatibility for production deployment. Repositories: \href{https://github.com/keras-team/keras}{Keras}, \href{https://github.com/keras-team/keras-hub}{Keras Hub} $|$ Profile: \href{https://github.com/pctablet505}{\color{midnightblue}github.com/pctablet505}}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Algorithmic Trading System} $|$ \emph{Personal Research}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a high-frequency trading bot using \textbf{Reinforcement Learning} and \textbf{Zerodha APIs} — full-stack from real-time data ingestion and ML inference to automated order execution via REST APIs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology (MIT)}{Remote}
+      {\href{https://micromasters.mit.edu/ds}{MicroMasters in Statistics and Data Science}}{Feb 2021 -- Jun 2023}
+      \vspace{-4pt}
+      \small{\item{\textit{Graduate-level credential comprising 5 intensive courses and proctored exams (Equivalent to 1 semester of Master's coursework).}}}
+    \resumeSubheading
+      {Birsa Institute of Technology, Sindri}{Dhanbad, India}
+      {B.Tech in Computer Science and Engineering}{Aug 2018 -- Jun 2022}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{MD Appreciation Award:} Recognized by the Managing Director at Samsung Research for innovation in Knox Security.}
+    \resumeItem{\textbf{Top 0.05\% Global Rank:} Ranked 1026 out of 2.2M+ participants in HackerRank Algorithms.}
+    \resumeItem{\textbf{Gold Medal - HackFest 2020:} Secured Global Rank 29 with a rating of 2042.}
+    \resumeItem{\textbf{GATE Qualified:} All India Rank 5648 in Computer Science.}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \small{
+    \textbf{MIT (edX):} \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Machine Learning with Python}, \href{https://courses.edx.org/certificates/3c59035943454549990f2d2de7f49e9f}{Fundamentals of Statistics}, \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Data Analysis} $|$
+    \textbf{Harvard (edX):} \href{https://cs50.harvard.edu/certificates/2b1773c1-473d-4a7b-89ae-460d23154126}{CS50 AI with Python} $|$
+    \textbf{HackerRank:} \href{https://www.hackerrank.com/certificates/fc7b9af8aac8}{Adv. Algorithms}
+  }
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.12in, label={}]
+    \small{\item{
+     \textbf{Cloud \& Infrastructure:} Python (Flask/FastAPI), Docker, CI/CD, GCP, REST APIs, API Development
+    }}
+    \small{\item{
+     \textbf{Core ML \& Generative AI:} Keras, JAX, TensorFlow, PyTorch, Transformers (Llama/Gemma), Quantization (QAT/PTQ), LoRA/PEFT, Diffusion Models
+    }}
+    \small{\item{
+     \textbf{On-Device \& Mobile:} Android NDK, JNI, LiteRT (TFLite), DSP Optimization (Hexagon), Android Development, Mobile App Development
+    }}
+    \small{\item{
+     \textbf{Languages:} Python, Java, Kotlin, JavaScript, C++, SQL, Bash
+    }}
+    \small{\item{
+     \textbf{Data Science \& Analytics:} NumPy, Pandas, SciPy, Statistical Modeling, Feature Engineering
+    }}
+    \small{\item{
+     \textbf{Computer Vision:} Image Inpainting, Image Restoration, Face Recognition, Object Detection, OpenCV
+    }}
+    \small{\item{
+     \textbf{CS Fundamentals:} Data Structures, Algorithms, System Design, Linear Algebra, Probability
+    }}
+ \end{itemize}
+
+\end{document}
