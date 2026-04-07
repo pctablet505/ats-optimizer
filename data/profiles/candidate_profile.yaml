@@ -1,149 +1,419 @@
-# Sample / Empty Candidate Profile
-# Fill this file with your professional information.
-# The system uses this as the "source of truth" to generate tailored resumes.
+# Rahul Kumar — Candidate Profile
+# AI/ML Engineer at Google | Specializing in RL, Quantitative Finance, Computer Vision
+# Source: AlgoTrading project + Samsung/Qualcomm experience
 
 personal_info:
-  full_name: "Jane Doe"
-  email: "jane.doe@email.com"
-  phone: "+1-555-123-4567"
-  location: "San Francisco, CA"
-  linkedin: "https://linkedin.com/in/janedoe"
-  github: "https://github.com/janedoe"
-  portfolio: null
+  full_name: "Rahul Kumar"
+  email: "stopslavery404@gmail.com"
+  phone: "+91-xxx-xxx-xxxx"
+  location: "Hyderabad, India"
+  linkedin: "https://linkedin.com/in/rahul-kumar"
+  github: "https://github.com/stopslavery404"
+  portfolio: "https://github.com/stopslavery404"
 
 summaries:
-  - target_role: "Backend Engineer"
+  - target_role: "ML/AI Engineer - Reinforcement Learning"
     text: >
-      Experienced backend engineer with 5+ years building scalable Python
-      services. Proficient in FastAPI, Django, PostgreSQL, and cloud
-      infrastructure. Passionate about clean architecture and reliable systems.
-  - target_role: "Full Stack Developer"
+      ML/AI engineer at Google Keras Team with expertise in reinforcement learning, 
+      quantitative finance, and computer vision. Currently architecting an algorithmic 
+      trading platform using pure JAX with vectorized Gymnasium environments for 
+      multi-symbol RL training. 4+ years building production ML systems from research 
+      to deployment, including on-device AI, backend services, and DSP-optimized solutions.
+  
+  - target_role: "Quantitative Developer / Quant Trader"
     text: >
-      Full stack developer with 5+ years of experience building web
-      applications from database to frontend. Skilled in Python, React,
-      PostgreSQL, and AWS.
+      Quantitative developer with deep expertise in algorithmic trading, portfolio 
+      management, and RL-based strategy optimization. Developed end-to-end trading 
+      platform for Indian equities (NSE/BSE) with realistic backtesting, risk 
+      management, and multi-agent RL training. Strong foundation in technical analysis, 
+      transaction cost modeling, and performance metrics (Sharpe, Sortino, Calmar).
+  
+  - target_role: "Senior ML Engineer"
+    text: >
+      Senior ML engineer with 4+ years at Google Keras Team and Samsung R&D. 
+      Expert in JAX, TensorFlow, PyTorch, and production ML systems. Specialized 
+      in RL algorithms (PPO, A2C, DQN, SAC), computer vision (detection, segmentation), 
+      and real-time inference optimization. Proven track record building scalable systems 
+      with complex data pipelines and on-device deployment.
 
 skills:
-  - category: "Languages"
+  - category: "Programming Languages"
     items:
       - name: "Python"
         proficiency: "Expert"
         years: 6
-      - name: "JavaScript"
-        proficiency: "Advanced"
-        years: 4
-      - name: "TypeScript"
+      - name: "JAX"
+        proficiency: "Expert"
+        years: 2
+      - name: "C++"
+        proficiency: "Intermediate"
+        years: 3
+      - name: "Java"
+        proficiency: "Intermediate"
+        years: 3
+      - name: "Kotlin"
         proficiency: "Intermediate"
         years: 2
-      - name: "SQL"
-        proficiency: "Advanced"
-        years: 5
+      - name: "JavaScript"
+        proficiency: "Basic"
+        years: 2
 
-  - category: "Frameworks"
+  - category: "Deep Learning & AI Frameworks"
     items:
-      - name: "FastAPI"
+      - name: "JAX (CUDA/GPU)"
+        proficiency: "Expert"
+        years: 2
+      - name: "Keras"
         proficiency: "Expert"
         years: 3
-      - name: "Django"
+      - name: "TensorFlow"
         proficiency: "Advanced"
         years: 4
-      - name: "React"
+      - name: "PyTorch"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Gymnasium (RL Environments)"
+        proficiency: "Expert"
+        years: 2
+      - name: "Stable-Baselines3"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Reinforcement Learning"
+    items:
+      - name: "Policy Gradient Methods (PPO, A2C)"
+        proficiency: "Expert"
+        years: 2
+      - name: "Value-based Methods (DQN, SAC, TD3)"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Multi-Agent RL"
+        proficiency: "Advanced"
+        years: 1
+      - name: "Actor-Critic Architectures"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Reward Shaping & Design"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Environment Design"
+        proficiency: "Expert"
+        years: 2
+
+  - category: "Quantitative Finance & Trading"
+    items:
+      - name: "Algorithmic Trading"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Portfolio Management"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Risk Management"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Backtesting Engines"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Technical Analysis"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Transaction Cost Modeling"
+        proficiency: "Advanced"
+        years: 2
+
+  - category: "Data Engineering & Databases"
+    items:
+      - name: "SQLite"
+        proficiency: "Expert"
+        years: 2
+      - name: "Parquet (Data Warehouse)"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Time-Series Data Processing"
+        proficiency: "Expert"
+        years: 3
+      - name: "Data Pipelines & ETL"
+        proficiency: "Advanced"
+        years: 3
+      - name: "NumPy & Pandas"
+        proficiency: "Expert"
+        years: 4
+
+  - category: "Computer Vision"
+    items:
+      - name: "Object Detection (YOLOv11, Faster R-CNN)"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Image Segmentation (Mask R-CNN, U-Net)"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Face Recognition & Detection"
+        proficiency: "Expert"
+        years: 3
+      - name: "Synthetic Dataset Generation"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Computer Vision (General)"
+        proficiency: "Advanced"
+        years: 4
+
+  - category: "UI & Visualization"
+    items:
+      - name: "Streamlit"
+        proficiency: "Expert"
+        years: 2
+      - name: "Flask"
+        proficiency: "Advanced"
+        years: 2
+      - name: "Django"
         proficiency: "Intermediate"
+        years: 2
+      - name: "Matplotlib & Seaborn"
+        proficiency: "Advanced"
+        years: 3
+
+  - category: "Mobile Development"
+    items:
+      - name: "Android Development (Kotlin/Java)"
+        proficiency: "Advanced"
+        years: 4
+      - name: "ML Model Porting"
+        proficiency: "Advanced"
+        years: 3
+      - name: "On-device AI Optimization"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Sensor Integration & IoT"
+        proficiency: "Advanced"
         years: 2
 
   - category: "Tools & Infrastructure"
     items:
-      - name: "PostgreSQL"
-        proficiency: "Advanced"
-        years: 5
-      - name: "Redis"
-        proficiency: "Advanced"
-        years: 3
-      - name: "Docker"
-        proficiency: "Advanced"
-        years: 4
-      - name: "AWS"
-        proficiency: "Intermediate"
-        years: 3
       - name: "Git"
         proficiency: "Expert"
-        years: 6
+        years: 5
+      - name: "Docker"
+        proficiency: "Advanced"
+        years: 3
+      - name: "Linux/WSL"
+        proficiency: "Expert"
+        years: 4
+      - name: "Zerodha Kite Connect API"
+        proficiency: "Expert"
+        years: 2
 
 experience:
-  - company: "TechCorp Inc."
-    title: "Senior Backend Engineer"
-    location: "San Francisco, CA"
-    start_date: "2022-03"
-    end_date: null  # null means current
+  - company: "Google"
+    title: "Software Engineer (Machine Learning)"
+    location: "Hyderabad, India"
+    start_date: "2025-02"
+    end_date: null
     bullets:
-      - text: "Designed and built a high-throughput event processing pipeline handling 50K events/second using Python, Kafka, and PostgreSQL"
-        tags: ["Python", "Kafka", "PostgreSQL", "event-driven", "high-throughput"]
-      - text: "Led migration from monolithic Django app to FastAPI microservices, reducing P99 latency by 40%"
-        tags: ["Django", "FastAPI", "microservices", "performance", "migration"]
-      - text: "Implemented Redis-based caching layer that reduced database load by 60% and improved API response times by 3x"
-        tags: ["Redis", "caching", "performance", "API"]
-      - text: "Mentored 3 junior engineers through code reviews, pair programming, and architectural guidance"
-        tags: ["mentoring", "leadership", "code-review"]
+      - text: "Working with Keras Team on deep learning framework improvements and optimization"
+        tags: ["Keras", "TensorFlow", "Deep Learning", "Python"]
 
-  - company: "StartupXYZ"
-    title: "Software Engineer"
+  - company: "Personal Project — AlgoTrading Platform"
+    title: "Lead Architect, RL & Quantitative Developer"
     location: "Remote"
-    start_date: "2019-06"
-    end_date: "2022-02"
+    start_date: "2024-09"
+    end_date: null
     bullets:
-      - text: "Built RESTful APIs serving 10K daily active users using Django REST Framework and PostgreSQL"
-        tags: ["Django", "REST API", "PostgreSQL", "DRF"]
-      - text: "Developed automated deployment pipeline using Docker, GitHub Actions, and AWS ECS"
-        tags: ["Docker", "CI/CD", "AWS", "GitHub Actions", "ECS"]
-      - text: "Created real-time notification system using WebSockets and Redis Pub/Sub"
-        tags: ["WebSockets", "Redis", "real-time", "notifications"]
-      - text: "Wrote comprehensive test suites achieving 90%+ code coverage using pytest"
-        tags: ["pytest", "testing", "code-coverage", "quality"]
+      - text: "Architected production-grade algorithmic trading platform for Indian equities (NSE/BSE) with modular data layer (SQLite+Parquet), simulation engine, RL lab, and Streamlit UI"
+        tags: ["JAX", "Gymnasium", "Python", "RL", "Trading", "Quantitative Finance", "SQLite"]
+      - text: "Integrated Zerodha Kite API to download 750+ instruments across 7 granularities with pause/resume capabilities and comprehensive data validation"
+        tags: ["Kite-Connect", "Data Engineering", "Time-Series", "API Integration"]
+      - text: "Engineered modular RL environments supporting heuristic, signal-based, and learning agents with shared parameters across multiple assets"
+        tags: ["Gymnasium", "RL Environments", "Python", "Multi-Agent RL"]
+      - text: "Optimized JAX-based agents (PPO, A2C, DQN) with CUDA GPU acceleration achieving vectorized rollouts across 128 parallel environments"
+        tags: ["JAX", "PPO", "A2C", "DQN", "GPU", "CUDA", "Vectorization"]
+      - text: "Built realistic backtesting engine with transaction costs, slippage, and comprehensive metrics (Sharpe, Sortino, Calmar, max drawdown)"
+        tags: ["Backtesting", "Risk Management", "Performance Metrics", "Trading"]
+      - text: "Developed extensive documentation: 4000+ line architecture doc, API reference, CLI (30+ commands), testing framework (70%+ coverage)"
+        tags: ["Documentation", "Architecture", "CLI", "Testing"]
+
+  - company: "Qualcomm"
+    title: "Machine Learning Engineer"
+    location: "Hyderabad, India"
+    start_date: "2024-09"
+    end_date: "2025-01"
+    bullets:
+      - text: "Implemented on-device AI solutions with DSP-optimized inference for SOTA computer vision applications"
+        tags: ["On-device AI", "DSP Optimization", "Computer Vision", "TensorFlow Lite"]
+      - text: "Developed Android demos showcasing real-time face detection, object recognition, and edge inference optimization"
+        tags: ["Android", "Kotlin", "Face Detection", "YOLO", "Real-time Inference"]
+
+  - company: "Samsung R&D Institute India (SRI-N)"
+    title: "Research & Development Engineer"
+    location: "Noida, India"
+    start_date: "2022-07"
+    end_date: "2025-01"
+    bullets:
+      - text: "Received MD Appreciation Award for developing SRI-N Satyapan anti-cheat proctored exam platform with face recognition and behavioral monitoring"
+        tags: ["Face Recognition", "Computer Vision", "Android", "Web Backend", "Python", "Achievement"]
+      - text: "Led end-to-end development: custom face embedding classifier (10K+ faces, 87ms search vs 1200ms baseline), exam portal, Android app, real-time monitoring"
+        tags: ["Face Recognition", "Classification", "Android", "Database Optimization"]
+      - text: "Engineered Knox Capture— barcode damage detection system generating photorealistic synthetic datasets, achieving 70-75% decoding accuracy (vs 67% baseline)"
+        tags: ["Computer Vision", "YOLO", "U-Net", "GAN", "Synthetic Data", "Android"]
+      - text: "Implemented distraction detection, car crash detection, and phone drop detection systems using sensor fusion and lightweight ML models"
+        tags: ["Sensor Fusion", "IoT", "Mobile ML", "Statistical Modeling"]
+
+  - company: "Samsung R&D Institute India (SRI-N)"
+    title: "Machine Learning Intern"
+    location: "Noida, India"
+    start_date: "2022-01"
+    end_date: "2022-06"
+    bullets:
+      - text: "Explored generative AI using Cycle GAN for image-to-image translation and learned Android app development fundamentals"
+        tags: ["GAN", "Generative AI", "Android", "Deep Learning"]
 
 education:
-  - institution: "University of California, Berkeley"
-    degree: "B.S. Computer Science"
-    graduation_date: "2019-05"
-    gpa: "3.7"
-    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Databases", "Machine Learning"]
+  - institution: "MIT MicroMasters in Statistics and Data Science"
+    degree: "MicroMasters"
+    graduation_date: "2023"
+    gpa: null
+    coursework: ["Statistics", "Data Analysis", "Machine Learning", "Probability", "Inference"]
+
+  - institution: "BIT Sindri"
+    degree: "B.Tech Computer Science & Engineering"
+    graduation_date: "2022-05"
+    gpa: null
+    coursework: ["Data Structures", "Algorithms", "Operating Systems", "Databases", "Machine Learning", "Computer Vision"]
 
 certifications:
-  - name: "AWS Solutions Architect Associate"
-    issuer: "Amazon Web Services"
-    date: "2023-01"
-  - name: "Python Professional Certificate"
-    issuer: "Python Institute"
-    date: "2021-06"
+  - name: "MIT Machine Learning with Python — From Linear Models to Deep Learning"
+    issuer: "MIT online (edX)"
+    date: "2023-06"
+  - name: "CS50 Introduction to Artificial Intelligence with Python"
+    issuer: "Harvard University (edX)"
+    date: "2021-12"
+  - name: "MIT MicroMasters in Statistics and Data Science (Complete)"
+    issuer: "MIT online"
+    date: "2023-06"
 
 projects:
-  - name: "Open Source CLI Tool"
-    description: "Built a command-line tool for automating database migrations across multiple environments"
-    tech_stack: ["Python", "Click", "PostgreSQL", "Docker"]
-    url: "https://github.com/janedoe/db-migrator"
-    highlights:
-      - "500+ GitHub stars"
-      - "Used by 3 companies in production"
-
-  - name: "Real-time Dashboard"
-    description: "Full-stack monitoring dashboard with live metrics and alerting"
-    tech_stack: ["React", "TypeScript", "FastAPI", "WebSockets", "PostgreSQL"]
+  - name: "Algorithmic Trading Platform (RL Alpha Labs)"
+    description: "Production-grade algorithmic trading platform for Indian equities (NSE/BSE) with JAX-based RL agents, realistic backtesting, and risk management"
+    tech_stack: ["JAX", "Gymnasium", "SQLite", "Parquet", "Streamlit", "Zerodha Kite API", "Python 3.13"]
     url: null
     highlights:
-      - "Sub-second data refresh using WebSocket streams"
-      - "Custom alerting rules engine with email/Slack notifications"
+      - "Pure JAX-based RL agents (PPO, A2C, DQN) with CUDA GPU acceleration"
+      - "Vectorized Gymnasium environments: 128 parallel rollouts for multi-symbol training"
+      - "Integrated Kite API for 750+ NSE/BSE instruments across 7 granularities"
+      - "Realistic backtesting: transaction costs, slippage, comprehensive metrics"
+      - "18-tab Streamlit UI for portfolio management, paper trading simulation"
+      - "CLI with 30+ commands using deferred imports for fast startup"
+      - "Risk management: drawdown limits, position sizing, portfolio constraints"
+      - "4000+ line architecture doc, API reference, 70%+ test coverage"
+
+  - name: "SRI-N Satyapan (Anti-Cheat Proctored Exam Platform)"
+    description: "Enterprise anti-cheat proctoring platform with face recognition and behavioral monitoring"
+    tech_stack: ["Python", "TensorFlow/Keras", "Android (Kotlin/Java)", "Flask", "PostgreSQL", "WebRTC"]
+    url: null
+    highlights:
+      - "Face recognition-based authentication for 10K+ candidates"
+      - "Custom face embedding classifier: 87ms search (vs 1200ms baseline on Android tablets)"
+      - "Real-time behavioral monitoring for fraud detection and compliance"
+      - "Full-stack solution: web portal, Android app, centralized server"
+      - "MD Appreciation Award from Samsung Research leadership"
+
+  - name: "Knox Capture (Damaged Barcode Scanner)"
+    description: "Mobile barcode scanning solution with computer vision for damaged/degraded barcodes"
+    tech_stack: ["Python", "YOLOv11", "U-Net", "Mask R-CNN", "ResNet", "Android", "TensorFlow Lite"]
+    url: null
+    highlights:
+      - "Photorealistic synthetic dataset generation using geometric transformations and physics"
+      - "Detection (YOLOv11) + Segmentation (Mask R-CNN) + Correction (U-Net) + Classification (ResNet)"
+      - "70-75% decoding accuracy (vs 67% baseline on damaged barcodes)"
+      - "Optimized on-device Android deployment with hardware-accelerated inference"
+      - "Confidence scoring for damage assessment; intelligent abstention on high damage"
+
+  - name: "Face Recognition System"
+    description: "Real-time multi-face recognition for live camera feeds and offline video processing"
+    tech_stack: ["Python", "TensorFlow/Keras", "Android", "OpenCV", "PostgreSQL"]
+    url: null
+    highlights:
+      - "Real-time face recognition for live and video feeds"
+      - "Logarithmic database search: 87ms (vs 1200ms linear search on tablets)"
+      - "Custom embedding classifier trained on proprietary dataset"
+      - "Cross-platform deployment: Android, Windows, Linux"
+      - "Integrated surveillance and access control systems"
 
 qa_bank:
   - question_pattern: "years of experience"
-    answer: "5"
+    answer: "4+ years in ML/AI engineering, 2+ years in quantitative finance and RL"
   - question_pattern: "authorized to work"
-    answer: "Yes"
+    answer: "Yes, Indian citizen with valid passport"
   - question_pattern: "require.*sponsorship|visa"
-    answer: "No"
+    answer: "No sponsorship required for India-based roles; open to discussing visa sponsorship for international positions"
   - question_pattern: "willing to relocate"
-    answer: "Yes"
+    answer: "Yes, open to relocation within India or internationally for the right opportunity"
   - question_pattern: "salary|compensation|expected.*pay"
-    answer: "Open to discussion based on total compensation"
+    answer: "INR 18-35 LPA depending on role, company, and total compensation package"
   - question_pattern: "start date|available to start"
-    answer: "2 weeks notice"
+    answer: "Available on short notice / can discuss based on opportunity"
   - question_pattern: "gender|race|ethnicity|veteran|disability"
-    answer: "Prefer not to say"
+    answer: "Prefer not to answer"
+  - question_pattern: "work.*from.*home|remote|wfh"
+    answer: "Prefer hybrid or remote work; open to flexible arrangements"
+  - question_pattern: "notice.*period|leaving.*current"
+    answer: "Can provide notice as per professional standards; currently exploring opportunities"
+  - question_pattern: "career goal|long.*term|future"
+    answer: "Build cutting-edge ML systems in quantitative finance, RL, and AI; eventual goal to lead ML research team or found fintech startup"
+
+target_industries:
+  - "Fintech / Quantitative Trading"
+  - "AI/Machine Learning"
+  - "Algorithmic Trading Firms"
+  - "Tech Giants (Google, Meta, Microsoft, etc.)"
+  - "Robotics & Autonomous Systems"
+  - "Computer Vision"
+  - "On-Device AI / Edge Computing"
+
+target_companies:
+  - "Zerodha"
+  - "Navi"
+  - "DeFi Platforms"
+  - "Google"
+  - "Meta"
+  - "Apple"
+  - "Microsoft"
+  - "DeepMind"
+  - "OpenAI"
+  - "Quantitative Trading Firms"
+
+target_roles:
+  - "ML/AI Engineer (Reinforcement Learning)"
+  - "Quantitative Developer"
+  - "Senior ML Engineer"
+  - "Research Scientist"
+  - "ML Infrastructure Engineer"
+  - "Quant Trader / Quant Developer"
+  - "Computer Vision Engineer"
+
+salary_expectations:
+  - currency: "INR"
+    min: 1_800_000
+    max: 3_500_000
+    preferred: 2_500_000
+
+work_preferences:
+  - "Remote / Hybrid"
+  - "Relocation to tech hubs (Bengaluru, Hyderabad, Mumbai)"
+  - "International opportunities"
+  - "Contract / Full-time"
+
+keywords_for_matching:
+  - "JAX"
+  - "Reinforcement Learning"
+  - "Quantitative Finance"
+  - "Algorithmic Trading"
+  - "PyTorch"
+  - "TensorFlow"
+  - "Computer Vision"
+  - "Android ML"
+  - "GPU Optimization"
+  - "Face Recognition"
+  - "RL Algorithms"
+  - "Backtesting"
+  - "Risk Management"
+  - "On-device AI"

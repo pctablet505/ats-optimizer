@@ -1,0 +1,221 @@
+\documentclass[10pt, letterpaper]{article}
+
+%-------------------------
+% Packages
+%-------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{sourcesanspro} % Professional Sans-Serif
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{multicol}
+
+%-------------------------
+% Geometry / Margins
+%-------------------------
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+%-------------------------
+% Custom Colors
+%-------------------------
+\definecolor{midnightblue}{RGB}{25, 25, 112} % Header Color
+\definecolor{darkgray}{RGB}{70, 70, 70}     % Date/Subtext Color
+
+%-------------------------
+% Formatting Settings
+%-------------------------
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large\color{midnightblue}\bfseries
+}{}{0em}{}[\color{midnightblue}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Modified Subheading to de-emphasize dates visually
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small\color{darkgray} #2} \\
+      \textit{\small#3} & \textit{\small\color{darkgray} #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Link Colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=midnightblue,
+    filecolor=magenta,      
+    urlcolor=midnightblue,
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \textbf{\color{midnightblue} Rahul Kumar}} \\ \vspace{4pt}
+    {\Large \textmd{Software Engineer | ML Platform Infrastructure, Framework Optimization \& Scalability}} \\ \vspace{4pt}
+    \small 
+    +91 8709253658 \ $|$ \ 
+    \href{mailto:work.rahul126@gmail.com}{work.rahul126@gmail.com} \ $|$ \ 
+    \href{https://www.linkedin.com/in/rahul126/}{linkedin.com/in/rahul126} \ $|$ \ 
+    \href{https://github.com/pctablet505}{github.com/pctablet505} \ $|$ \ 
+    \href{https://github.com/pctablet505/portfolio/}{Portfolio}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\vspace{2pt}
+\color{darkgray}
+\small{Backend Software Engineer with 3.5+ years building \textbf{ML-as-a-Service platforms} at scale. Currently at \textbf{Google (Core ML)}, specializing in \textbf{distributed ML infrastructure}, \textbf{GenAI platform architecture}, and \textbf{framework optimization}. Expert in \textbf{C++ backend systems}, \textbf{Python ML serving}, \textbf{cross-framework interoperability}, and \textbf{horizontal ML systems} supporting 100k+ QPS. Strong background in production deployment: from distributed training pipelines → model serving infrastructure → operational dashboards → real-time scaling. Experienced with \textbf{Kubernetes orchestration}, \textbf{streaming data pipelines}, and \textbf{end-to-end ML system reliability}.}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google -- Core ML (Keras)}{Feb 2025 -- Present}
+      {Software Engineer 2, Machine Learning}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{LiteRT (TFLite) Export Ecosystem:} Architected the end-to-end export pipeline enabling KerasHub models to run on mobile/edge devices. This capability bridged the gap between high-level GenAI research and production deployment for models like \textbf{Gemma} and \textbf{Llama}.}
+        \resumeItem{\textbf{Inference Benchmarking System:} Designed a centralized performance analysis suite to evaluate inference throughput (tokens/sec) and latency. Automated regression testing across \textbf{TPU/GPU} clusters to identify optimal batch sizes and hardware configurations.}
+        \resumeItem{\textbf{GenAI Model Serving:} Spearheaded Keras-native implementation for \textbf{Llama 3.1} and \textbf{Multimodal Gemma 3}. Resolved critical quantization instabilities (4-bit/8-bit) and optimized JAX backend operators to ensure reliable large-scale inference.}
+        \resumeItem{\textbf{Large-Scale Migration (Adbrain):} Led the architectural migration of a mission-critical Ad-recommendation model to \textbf{Keras 3}. Solved complex cross-framework interoperability issues (Torch/JAX/TF) and fixed hardware-specific bottlenecks on \textbf{OpenVINO} and \textbf{Flash Attention}.}
+        \resumeItem{\textbf{Core Framework Reliability:} Conducted deep-dive debugging of the image processing stack, identifying and patching segmentation faults in core libraries (e.g., \textit{giflib}) and implementing security patches adopted by the open-source community.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Qualcomm}{Sep 2024 -- Jan 2025}
+      {Machine Learning Engineer}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Generative In-Painting (Magic Keeper):} Redesigned the "Magic Keeper" feature for Snapdragon Summit. Deployed \textbf{Generative AI} models for object removal and image completion, optimizing specifically for \textbf{NPU/DSP} latency constraints.}
+        \resumeItem{\textbf{Multimedia Optimization:} Implemented \textbf{Quantization Aware Training (QAT)}, reducing memory bandwidth by 75\% for high-fidelity image processing tasks on mobile hardware.}
+        \resumeItem{\textbf{Native Integration:} Collaborated with Android framework teams to build a voice-controlled "Camera Copilot," integrating ML inference directly into the native camera stack for real-time media manipulation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Samsung R\&D Institute (SRI-N)}{Jan 2022 -- Aug 2024}
+      {Research \& Development Engineer (CV \& Services)}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Knox Capture:} Developed a complete solution for damaged barcode scanning in industrial environments. Conducted deep research and built algorithms for synthetic dataset generation with damages (e.g., blur, occlusion). Trained models for detection, correction, decoding, and segmentation, generating \textbf{10M+ samples} and boosting accuracy from 70\% to \textbf{90\%}.}
+        \resumeItem{\textbf{Face Recognition Engine:} Developed a multi-face recognition solution for real-time camera frames and offline videos. Optimized database search time from linear to logarithmic complexity. Replaced face detection model to overcome limitations of poor detection. Built surveillance and entry management systems, enabling real-time authentication for 10k+ users.}
+        \resumeItem{\textbf{SRI-N Satyapan (End-to-End Service):} Architected a complete proctoring platform with anti-cheat features, face recognition authentication, and face detection flagging. Built \textbf{Backend Server}, Web Portal, and Android App, integrating Face/Gaze detection models to serve \textbf{2,000+ concurrent users}.}
+        \resumeItem{\textbf{Distraction Detection:} Developed behavioral analysis AI using facial expressions, eye movement, yawn detection, head pose, and face detection, achieving \textbf{87\% accuracy} for user attention monitoring in video/meeting contexts.}
+        \resumeItem{\textbf{Drop Detection:} Developed smartphone-based solution to detect phone drops, estimate drop height, and assess surface hardness using sensor fusion. Replaced heavy deep learning architectures with feature-engineered ML solutions, reducing model size by \textbf{99\%} (from million parameters to <20 params) and power consumption by \textbf{95\%} on-device.}
+        \resumeItem{\textbf{Car Crash Detection:} Built solution to detect car crash events and automatically send SOS to close contacts using device sensors.}
+        \resumeItem{\textbf{Image Restoration (Research):} Prototyped algorithms for shadow removal and document noise reduction, contributing to core imaging features for Galaxy devices.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS \& OPEN SOURCE-----------
+\section{Projects \& Open Source}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Algorithmic Trading System} $|$ \emph{Personal Research, End-to-End Architecture}}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Complete end-to-end platform:} 750+ NSE/BSE instruments, real-time Zerodha API, 200+ technical indicators, 7 granularities, Gymnasium training (128 parallel environments, JAX/PPO), portfolio risk management, backtesting. Achieved 18\% Sharpe ratio on 200+ scenarios.}
+        \resumeItem{\textbf{Distributed Infrastructure Design:} Engineered streaming data pipeline (Parquet-based feature computation, SQLite state management) supporting real-time indicator vectorization across 750+ symbols. Built distributed training architecture with multi-device synchronization and checkpointing for continuous strategy adaptation.}
+        \resumeItem{Optimized end-to-end system latency (<5ms p99 inference) through custom memory layouts, kernel fusion, and distributed rollout collection. Deployed horizontal scaling infrastructure enabling 3x throughput gains and supporting deployment across Zerodha live trading and backtesting environments simultaneously.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Keras \& Keras Hub (Open Source)} $|$ \emph{Active Contributor}}{Feb 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Building the bridge between research and production. Implemented \textbf{LiteRT Export Pipeline} and backend compatibility for \textbf{GenAI} models.}
+        \resumeItem{Repositories: \href{https://github.com/keras-team/keras}{Keras}, \href{https://github.com/keras-team/keras-hub}{Keras Hub} $|$ Profile: \href{https://github.com/pctablet505}{\color{midnightblue}github.com/pctablet505}}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology (MIT)}{Remote}
+      {\href{https://micromasters.mit.edu/ds}{MicroMasters in Statistics and Data Science}}{Feb 2021 -- Jun 2023}
+      \vspace{-4pt}
+      \small{\item{\textit{Graduate-level credential comprising 5 intensive courses and proctored exams (Equivalent to 1 semester of Master's coursework).}}}
+    \resumeSubheading
+      {Birsa Institute of Technology, Sindri}{Dhanbad, India}
+      {B.Tech in Computer Science and Engineering}{Aug 2018 -- Jun 2022}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{MD Appreciation Award:} Recognized by the Managing Director at Samsung Research for innovation in Knox Security.}
+    \resumeItem{\textbf{Top 0.05\% Global Rank:} Ranked 1026 out of 2.2M+ participants in HackerRank Algorithms.}
+    \resumeItem{\textbf{Gold Medal - HackFest 2020:} Secured Global Rank 29 with a rating of 2042.}
+    \resumeItem{\textbf{GATE Qualified:} All India Rank 5648 in Computer Science.}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS (Condensed)-----------
+\section{Certifications}
+  \small{
+    \textbf{MIT (edX):} \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Machine Learning with Python}, \href{https://courses.edx.org/certificates/3c59035943454549990f2d2de7f49e9f}{Fundamentals of Statistics}, \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Data Analysis} $|$
+    \textbf{Harvard (edX):} \href{https://cs50.harvard.edu/certificates/2b1773c1-473d-4a7b-89ae-460d23154126}{CS50 AI with Python} $|$
+    \textbf{HackerRank:} \href{https://www.hackerrank.com/certificates/fc7b9af8aac8}{Adv. Algorithms}
+  }
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.12in, label={}]
+    \small{\item{
+     \textbf{ML Infrastructure \& Platforms:} Distributed training, Model serving, Kubernetes orchestration, ML-as-a-Service architecture, Horizontal systems
+    }}
+    \small{\item{
+     \textbf{Backend Systems:} C++, Python (Flask/FastAPI), gRPC, Protocol Buffers, Event-driven architecture, Streaming pipelines
+    }}
+    \small{\item{
+     \textbf{ML Frameworks \& Libraries:} TensorFlow, JAX, PyTorch, Keras, Cross-framework interoperability, XLA/Compiler optimization
+    }}
+    \small{\item{
+     \textbf{Data Systems:} Distributed data pipelines, Feature stores, Real-time streaming, Parquet, BigQuery, ETL systems
+    }}
+    \small{\item{
+     \textbf{DevOps \& Infrastructure:} GCP, Docker, CI/CD, Monitoring, TensorBoard, WandB, Observability
+    }}
+    \small{\item{
+     \textbf{Languages:} C++, Python, Java, Kotlin, SQL, Bash
+    }}
+    \small{\item{
+     \textbf{CS Fundamentals:} Algorithms, Data structures, Distributed systems, Linux, Performance optimization
+    }}
+ \end{itemize}
+
+\end{document}
