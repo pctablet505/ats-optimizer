@@ -72,6 +72,113 @@
 %----------HEADER----------
 \begin{center}
     {\Huge \textbf{\color{midnightblue} Rahul Kumar}} \\ \vspace{4pt}
+    {\Large \textmd{Software Engineer | ML Systems, GenAI Serving \& Open-Source Contributor}} \\ \vspace{4pt}
+    \small
+    +91 8709253658 \ $|$ \
+    \href{mailto:work.rahul126@gmail.com}{work.rahul126@gmail.com} \ $|$ \
+    \href{https://www.linkedin.com/in/rahul126/}{linkedin.com/in/rahul126} \ $|$ \
+    \href{https://github.com/pctablet505}{github.com/pctablet505} \ $|$ \
+    \href{https://github.com/pctablet505/portfolio/}{Portfolio}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\vspace{2pt}
+\color{darkgray}
+\small{Software engineer with 3.5+ years building \textbf{ML serving infrastructure}, \textbf{LLM inference pipelines}, and benchmarking systems at Google Core ML, Qualcomm, and Samsung R\&D. Proficient in \textbf{JAX} and \textbf{PyTorch}-backed model serving across \textbf{TPU/GPU} hardware, with production experience implementing Llama 3.1 and Gemma 3 inference and optimizing quantization for throughput. Active open-source contributor to Keras and KerasHub with merged contributions enabling GenAI edge deployment.}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google -- Core ML (Keras)}{Feb 2025 -- Present}
+      {Software Engineer 2, Machine Learning}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{LLM Serving Stack (Llama 3.1 / Gemma 3):} Spearheaded Keras-native \textbf{LLM inference serving} for \textbf{Llama 3.1} and \textbf{Multimodal Gemma 3}; resolved critical 4-bit/8-bit quantization instabilities and optimized \textbf{JAX backend operators} for reliable large-scale \textbf{TPU inference} throughput.}
+        \resumeItem{\textbf{MLPerf-Style Benchmarking Platform:} Designed centralized \textbf{inference benchmarking suite} measuring throughput (tokens/sec) and latency across \textbf{TPU/GPU} clusters; automated parameterized batch-size sweeps and regression testing to identify optimal hardware configurations and performance regressions.}
+        \resumeItem{\textbf{LiteRT Export Pipeline:} Architected end-to-end \textbf{LiteRT export} for KerasHub GenAI models (Gemma, Llama), enabling cross-platform mobile/edge deployment from a shared JAX/TF serving stack.}
+        \resumeItem{\textbf{Core Framework Security:} Identified and patched segmentation faults in core image processing libraries (giflib); security fixes merged into the open-source community.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Qualcomm}{Sep 2024 -- Jan 2025}
+      {Machine Learning Engineer}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{QAT Inference Optimization:} Implemented \textbf{Quantization Aware Training (QAT)} reducing memory bandwidth by \textbf{75\%} on mobile hardware; demonstrated production model quality tuning to meet \textbf{on-device inference latency} budgets.}
+        \resumeItem{\textbf{Native Runtime Integration:} Integrated real-time ML inference into native Android camera stack via \textbf{JNI and NDK}; ensured low-latency execution within the device serving runtime for Camera Copilot.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Samsung R\&D Institute (SRI-N)}{Jan 2022 -- Aug 2024}
+      {Research \& Development Engineer (CV \& Services)}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{On-Device Inference Pipeline:} Trained detection, segmentation, and restoration pipeline (YOLOv11, Mask R-CNN, U-Net) generating \textbf{10M+ synthetic training samples}; deployed on-device inference runtime, boosting accuracy from \textbf{70\% to 90\%}.}
+        \resumeItem{\textbf{Model Compression for Device Inference:} Achieved \textbf{99\% model size reduction} and \textbf{95\% power reduction} by replacing deep learning drop detection with a feature-engineered solution — production model compression for device inference efficiency.}
+        \resumeItem{\textbf{Face Recognition Optimization:} Optimized face database search from \textbf{O(n) to O(log n)} complexity; deployed low-latency authentication runtime for \textbf{10k+ concurrent users}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS \& OPEN SOURCE-----------
+\section{Projects \& Open Source}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Keras \& Keras Hub} $|$ \emph{Open Source Contributor}}{Feb 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{LiteRT export pipeline} and JAX/PyTorch backend compatibility for GenAI models; contributions enable production edge deployment of Gemma and Llama. Repos: \href{https://github.com/keras-team/keras}{Keras}, \href{https://github.com/keras-team/keras-hub}{Keras Hub} $|$ \href{https://github.com/pctablet505}{github.com/pctablet505}}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Algorithmic Trading System} $|$ \emph{Personal Project}}{}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{JAX-native PPO/DQN RL agents} with 128 vectorized environments; designed custom \textbf{inference serving pipeline} with hardware-adaptive execution and automated performance benchmarking across 746 NSE instruments.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.12in, label={}]
+    \small{\item{\textbf{Core ML \& Generative AI:} JAX, PyTorch, Keras, TensorFlow, Transformers (Llama/Gemma), Quantization (QAT/PTQ), Flash Attention, LoRA/PEFT, Scikit-Learn}}
+    \small{\item{\textbf{On-Device \& Mobile:} LiteRT (TFLite), OpenVINO, Android NDK, JNI, DSP Optimization (Hexagon), Memory Profiling}}
+    \small{\item{\textbf{Languages:} Python, C++, Java, Bash, SQL}}
+    \small{\item{\textbf{Cloud \& Infrastructure:} GCP, TPU/GPU Clusters, Docker, CI/CD, REST APIs, FastAPI}}
+    \small{\item{\textbf{CS Fundamentals:} Data Structures, Algorithms, System Design, Distributed Systems, Linear Algebra}}
+    \small{\item{\textbf{Computer Vision:} Object Detection, Image Segmentation, Synthetic Data Generation, OpenCV, Face Recognition}}
+    \small{\item{\textbf{Tools:} Git, Linux, GitHub}}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology (MIT)}{Remote}
+      {\href{https://micromasters.mit.edu/ds}{MicroMasters in Statistics and Data Science}}{Feb 2021 -- Jun 2023}
+      \vspace{-4pt}
+      \small{\item{\textit{Graduate-level credential comprising 5 intensive courses and proctored exams (Equivalent to 1 semester of Master's coursework).}}}
+    \resumeSubheading
+      {Birsa Institute of Technology, Sindri}{Dhanbad, India}
+      {B.Tech in Computer Science and Engineering}{Aug 2018 -- Jun 2022}
+  \resumeSubHeadingListEnd
+
+%-----------HONORS \& AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{MD Appreciation Award:} Recognized by the Managing Director at Samsung Research for innovation in Knox Security.}
+    \resumeItem{\textbf{Top 0.05\% Global Rank:} Ranked 1026 out of 2.2M+ participants in HackerRank Algorithms.}
+    \resumeItem{\textbf{Gold Medal -- HackFest 2020:} Secured Global Rank 29 with a rating of 2042.}
+    \resumeItem{\textbf{GATE Qualified:} All India Rank 5648 in Computer Science.}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \small{
+    \textbf{MIT (edX):} \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Machine Learning with Python}, \href{https://courses.edx.org/certificates/3c59035943454549990f2d2de7f49e9f}{Fundamentals of Statistics}, \href{https://courses.edx.org/certificates/bf4ea7cb34a742cea00c770801d1947d}{Data Analysis} $|$
+    \textbf{Harvard (edX):} \href{https://cs50.harvard.edu/certificates/2b1773c1-473d-4a7b-89ae-460d23154126}{CS50 AI with Python} $|$
+    \textbf{HackerRank:} \href{https://www.hackerrank.com/certificates/fc7b9af8aac8}{Adv. Algorithms}
+  }
+
+\end{document}
+    {\Huge \textbf{\color{midnightblue} Rahul Kumar}} \\ \vspace{4pt}
     {\Large \textmd{Machine Learning Engineer | LLM Inference, TPU Performance \& Open-Source ML}} \\ \vspace{4pt}
     \small
     +91 8709253658 \ $|$ \

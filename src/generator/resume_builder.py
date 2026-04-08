@@ -112,6 +112,15 @@ a specific job description.
 5. LaTeX special characters in plain text (%, &, $, #, _, {, }) MUST be escaped
    (e.g. & → \\&, % → \\%, $ → \\$) UNLESS they are inside a LaTeX command.
 6. \\textbf{}, \\textit{}, \\href{}{} are allowed and encouraged for emphasis.
+7. HEADLINE RULE: The subtitle tagline must describe the candidate's REAL background
+   positioned toward the role — NOT the target role's domain as if they already work
+   in it. Good: "Software Engineer | ML Systems, GenAI & Cross-Framework Infrastructure".
+   Bad: "ML Engineer | LLM Inference & TPU Performance" (sounds like they're already
+   a TPU inference expert, which looks fake). Always start with "Software Engineer".
+8. PROJECTS SECTION: Clearly distinguish open-source GitHub work (label as
+   "Open Source Contributor") from private personal projects (label as "Personal
+   Project"). Keras/KerasHub = open source. AlgoTrading System = personal project,
+   NOT open source, NOT published — never list it as open source.
 ══════════════════════════════════════════════════════
 
 QUALITY TARGETS:
@@ -147,12 +156,20 @@ TAILORING INSTRUCTIONS
 
 HEADER
   • Keep name, contact info, and links exactly as in the profile.
-  • Update the subtitle tagline to match the target role from the JD.
+  • Write a subtitle tagline that describes the candidate's REAL background
+    positioned toward the role. Start with "Software Engineer". Follow with
+    2-3 actual skills from their experience that are directly relevant to the JD.
+    Example for an inference role: "Software Engineer | ML Systems, GenAI Serving
+    \\& Framework Optimization". Do NOT write the target job's domain as if they
+    already work there (e.g. do not write "ML Engineer | LLM Inference \\& TPU
+    Performance" — that implies expertise they haven't directly claimed).
 
 PROFESSIONAL SUMMARY
   • 3 sentences, 65-80 words, third-person only.
-  • Sentence 1: years of experience + primary specialisation matching the JD.
-  • Sentence 2: 2-3 core technologies/skills explicitly required by the JD.
+  • Sentence 1: current role + years of experience + 1-2 primary specialisations
+    directly traceable to their work history.
+  • Sentence 2: 2-3 core technologies/skills explicitly required by the JD that
+    the candidate ALREADY has from their experience.
   • Sentence 3: single strongest quantified achievement from the profile.
   • Place inside \\section{{Professional Summary}} after the header.
 
@@ -164,7 +181,15 @@ PROFESSIONAL EXPERIENCE
   • Use \\resumeSubheading{{Company}}{{Date}}{{Title}}{{Location}} then
     \\resumeItemListStart / \\resumeItem{{...}} / \\resumeItemListEnd.
 
-SKILLS
+PROJECTS \\& OPEN SOURCE
+  • Use section title: \\section{{Projects \\& Open Source}}
+  • Keras/KerasHub: label as "Open Source Contributor" — include GitHub URLs.
+  • Algorithmic Trading System: label as "Personal Project" — this is a PRIVATE
+    research project and must NEVER be labeled or implied as open source.
+  • Write project bullets using REAL technical details from the profile.
+  • Include only projects relevant to the JD.
+
+TECHNICAL SKILLS
   • Reorder skill categories: put the most JD-relevant categories first.
   • Within each category, list JD-matching skills before others.
   • Use the \\textbf{{Category:}} item format as in the template.
@@ -173,15 +198,12 @@ SKILLS
 EDUCATION
   • Include both degrees exactly as in the profile.
 
-HONORS & AWARDS + CERTIFICATIONS
+HONORS \\& AWARDS + CERTIFICATIONS
   • Include all entries; no changes needed.
 
-OPEN SOURCE & PROJECTS
-  • Include only projects relevant to the JD (drop irrelevant ones).
-
-SECTION ORDER (top to bottom):
-  Header → Summary → Experience → Skills → Education →
-  Honors & Awards → Certifications → Open Source & Projects
+SECTION ORDER (ordered by value delivered to the reader):
+  Header → Summary → Experience → Projects \\& Open Source →
+  Technical Skills → Education → Honors \\& Awards → Certifications
 
 OUTPUT: The complete LaTeX document from \\documentclass to \\end{{document}}.
 No preamble text, no markdown fences, no explanations. Just the .tex content.

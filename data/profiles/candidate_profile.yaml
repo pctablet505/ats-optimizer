@@ -284,12 +284,13 @@ projects:
       - "Backend compatibility work for Llama 3.1 and Multimodal Gemma 3"
 
   - name: "Algorithmic Trading System (RL Alpha Labs)"
-    description: "High-frequency trading bot using Reinforcement Learning and Zerodha APIs for the Indian stock market; real-time data ingestion and automated order execution"
-    tech_stack: ["Python", "Reinforcement Learning", "REST APIs", "Time Series", "NumPy", "Pandas"]
+    description: "End-to-end algorithmic trading platform using JAX-native Reinforcement Learning agents and Zerodha Kite Connect APIs for live Indian equities trading (NSE/BSE). Private personal research project — not open source."
+    tech_stack: ["Python", "JAX", "Reinforcement Learning", "REST APIs", "SQLite", "NumPy", "Pandas", "Streamlit"]
     url: null
     highlights:
-      - "Integrated RL policy with live market data for automated portfolio management"
-      - "Real-time order execution via Zerodha broker APIs"
+      - "Architected JAX-native PPO/DQN agents with 128 vectorized environments for multi-symbol strategy training across 746 NSE instruments"
+      - "Built real-time market data pipeline, backtesting engine with walk-forward validation, and automated order execution via Zerodha Kite Connect"
+      - "Developed Streamlit monitoring dashboard and CLI interface; SQLite-backed historical data store covering 3.5+ years of OHLCV data"
 
 honors:
   - "MD Appreciation Award — Recognized by Samsung Research Managing Director for innovation in Knox Security"
