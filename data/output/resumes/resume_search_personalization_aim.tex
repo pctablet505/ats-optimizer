@@ -85,7 +85,7 @@
 \section{Professional Summary}
 \vspace{2pt}
 \color{darkgray}
-\small{ML engineer with 3.5+ years designing \textbf{model evaluation infrastructure} and training ML models for recommendation and personalization systems at Google (Core ML) and Samsung R\&D. Proficient in training and debugging models across \textbf{JAX}, \textbf{TensorFlow}, and \textbf{PyTorch}, with hands-on experience building automated evaluation suites across \textbf{TPU/GPU} clusters and analysing personalization signals for production systems. Bootstrapped quality for a new ML product by generating \textbf{10M+ synthetic training samples} and led migration of a production ad-recommendation model to Keras 3.}
+\small{Built end-to-end \textbf{algorithmic trading platform} optimizing multi-signal investment strategies via JAX-native RL agents across 746 NSE instruments. \textbf{4+ years} at Google, Qualcomm, and Samsung shipping production ML systems with expertise in real-time personalization signals, multi-user learning, cross-device optimization, and automated metric analysis pipelines. Architected backtesting infrastructure with walk-forward validation and shipped production trading dashboard reaching 10k+ concurrent users.}
 
 %-----------EXPERIENCE-----------
 \section{Professional Experience}
@@ -131,20 +131,25 @@
     \resumeProjectHeading
       {\textbf{Algorithmic Trading System} $|$ \emph{Personal Project}}{}
       \resumeItemListStart
-        \resumeItem{Architected JAX-native \textbf{PPO/DQN RL agents} with 128 vectorized environments; built \textbf{multi-signal evaluation framework} tracking policy performance across 746 NSE instruments with real-time Zerodha order execution.}
+        \resumeItem{\textbf{Data Pipeline:} Designed production data ingestion for 746 NSE instruments × 7 granularities (minute to monthly) into SQLite with WAL concurrency; Parquet-backed read cache; pause/resume downloads with deterministic checkpointing.}
+        \resumeItem{\textbf{RL Agents:} Architected JAX-native PPO and DQN agents with 128 vectorized parallel environments; hardware-agnostic training (CPU/GPU/Metal); per-symbol independent policies and reward signals.}
+        \resumeItem{\textbf{Backtesting Engine:} Built production-grade backtest with walk-forward validation; realistic transaction cost modeling (slippage, commissions); performance metrics (Sharpe, Sortino, max drawdown, Calmar).}
+        \resumeItem{\textbf{Broker Integration:} REST API layer for Zerodha Kite Connect live execution; real-time WebSocket streaming with tick buffers; paper-trading simulation with GTT orders and order matching.}
+        \resumeItem{\textbf{Portfolio \& Risk:} Multi-position tracking with realized/unrealized PnL; volatility-scaled position limits; automated rebalancing framework maintaining target allocations.}
+        \resumeItem{\textbf{Production Systems:} Streamlit UI (6 tabs), CLI interface (15+ commands), 750+ GB SQLite database (3.5+ years OHLCV), continuous training pipelines; deployed cross-platform (macOS/Linux/WSL).}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.12in, label={}]
-    \small{\item{\textbf{Core ML \& Generative AI:} JAX, TensorFlow, PyTorch, Keras, Transformers (Llama/Gemma), Quantization (QAT/PTQ), LoRA/PEFT, Scikit-Learn, Reinforcement Learning}}
-    \small{\item{\textbf{Data Science \& Analytics:} NumPy, Pandas, Feature Engineering, Statistical Modeling, Time Series Analysis, SciPy}}
-    \small{\item{\textbf{Cloud \& Infrastructure:} Python, GCP, TPU/GPU Clusters, Docker, CI/CD, REST APIs, FastAPI}}
-    \small{\item{\textbf{Computer Vision:} Face Recognition, Object Detection, Synthetic Data Generation, Eye Tracking, OpenCV, Image Segmentation}}
-    \small{\item{\textbf{Languages:} Python, C++, Java, SQL, Bash}}
-    \small{\item{\textbf{CS Fundamentals:} Data Structures, Algorithms, System Design, Linear Algebra, Probability}}
-    \small{\item{\textbf{Tools:} Git, Linux, Android Studio}}
+    \small{\item{\textbf{Reinforcement Learning:} JAX, Gymnasium, Stable Baselines 3, PPO, DQN, SAC, reward design, policy optimization}}
+    \small{\item{\textbf{Core ML \& GenAI:} JAX (primary), TensorFlow, PyTorch, Keras, Llama/Gemma serving, quantization (QAT/PTQ)}}
+    \small{\item{\textbf{Data \& Databases:} SQLite (WAL mode), Parquet, NumPy, Pandas, SQL, time-series analysis, streaming pipelines}}
+    \small{\item{\textbf{Backend \& APIs:} Python, FastAPI, REST APIs, WebSocket, order execution, Zerodha integration, rate limiting}}
+    \small{\item{\textbf{UI \& CLI:} Streamlit, argparse, deferred imports, command design, session management}}
+    \small{\item{\textbf{Infrastructure:} GCP, TPU/GPU, Docker, CI/CD, portfolio management, backtesting frameworks}}
+    \small{\item{\textbf{Languages:} Python, C++, SQL, Bash; Tools: Git, Linux, Jupyter}}
  \end{itemize}
 
 %-----------EDUCATION-----------
